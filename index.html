@@ -5,41 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trading Journal</title>
 <style>
-:root {
-  --bg:#0d0f13; --surface:#141820; --surface2:#1c2230; --border:#252d3d;
-  --accent:#3b82f6; --green:#22c55e; --red:#ef4444; --yellow:#f59e0b;
-  --text:#e2e8f0; --text2:#7c8fa8; --text3:#3d4f63;
-  --r:8px; --mono:'JetBrains Mono','Fira Code',monospace;
-}
+:root{--bg:#0d0f13;--surface:#141820;--surface2:#1c2230;--border:#252d3d;--accent:#3b82f6;--green:#22c55e;--red:#ef4444;--yellow:#f59e0b;--text:#e2e8f0;--text2:#7c8fa8;--text3:#3d4f63;--r:8px;--mono:'JetBrains Mono','Fira Code',monospace;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{background:var(--bg);color:var(--text);font-family:-apple-system,sans-serif;font-size:13px;}
-
 .nav{display:flex;align-items:center;gap:12px;padding:10px 20px;background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
-.logo{font-size:15px;font-weight:700;letter-spacing:-.5px;}
-.logo span{color:var(--accent);}
+.logo{font-size:15px;font-weight:700;letter-spacing:-.5px;}.logo span{color:var(--accent);}
 .nav-right{margin-left:auto;display:flex;align-items:center;gap:10px;}
 .sync-time{font-size:11px;color:var(--text3);font-family:var(--mono);}
 .btn{padding:5px 12px;border-radius:5px;border:none;cursor:pointer;font-size:12px;font-weight:500;}
-.btn-ghost{background:transparent;color:var(--text2);border:1px solid var(--border);}
-.btn:hover{opacity:.85;}
-
+.btn-ghost{background:transparent;color:var(--text2);border:1px solid var(--border);}.btn:hover{opacity:.85;}
 .tabs{display:flex;background:var(--surface);border-bottom:1px solid var(--border);padding:0 20px;}
 .tab{padding:9px 16px;cursor:pointer;color:var(--text2);font-size:12px;font-weight:500;border-bottom:2px solid transparent;}
 .tab.active{color:var(--accent);border-bottom-color:var(--accent);}
-
 .main{padding:16px 20px;}
-
 .stats{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:16px;}
 .stat{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:12px 14px;}
 .stat-label{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:5px;}
 .stat-value{font-size:18px;font-weight:700;font-family:var(--mono);}
 .stat-sub{font-size:10px;color:var(--text2);margin-top:2px;}
 .pos{color:var(--green);}.neg{color:var(--red);}.neu{color:var(--text);}
-
 .filters{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center;}
 .fi{background:var(--surface2);border:1px solid var(--border);border-radius:5px;padding:5px 10px;color:var(--text);font-size:12px;outline:none;}
 .fi:focus{border-color:var(--accent);}
-
 .table-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);overflow:auto;max-height:calc(100vh - 300px);}
 table{width:100%;border-collapse:collapse;}
 thead th{padding:8px 12px;text-align:left;font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none;position:sticky;top:0;background:var(--surface);}
@@ -48,123 +35,77 @@ tbody tr{border-bottom:1px solid var(--border);cursor:pointer;transition:backgro
 tbody tr:last-child{border-bottom:none;}
 tbody tr:hover{background:var(--surface2);}
 td{padding:7px 12px;white-space:nowrap;}
-.mono{font-family:var(--mono);}
-.sym{font-weight:700;font-size:13px;}
-.co{font-size:10px;color:var(--text3);margin-top:1px;}
-
+.mono{font-family:var(--mono);}.sym{font-weight:700;}.co{font-size:10px;color:var(--text3);margin-top:1px;}
 .tag{display:inline-block;padding:1px 7px;border-radius:20px;font-size:10px;font-weight:600;margin:1px;}
-.tag-vcp{background:#1a2d4a;color:#60a5fa;}
-.tag-ep{background:#142d1e;color:#4ade80;}
-.tag-breakout{background:#2d1a4a;color:#c084fc;}
-.tag-pullback{background:#2d1f00;color:#fbbf24;}
-.tag-base{background:#0f2233;color:#7dd3fc;}
-.tag-short{background:#2d0f0f;color:#f87171;}
-.tag-mistake{background:#2d1a0f;color:#fb923c;}
-.tag-other{background:var(--surface2);color:var(--text2);}
-
+.tag-vcp{background:#1a2d4a;color:#60a5fa;}.tag-ep{background:#142d1e;color:#4ade80;}
+.tag-breakout{background:#2d1a4a;color:#c084fc;}.tag-pullback{background:#2d1f00;color:#fbbf24;}
+.tag-base{background:#0f2233;color:#7dd3fc;}.tag-short{background:#2d0f0f;color:#f87171;}
+.tag-mistake{background:#2d1a0f;color:#fb923c;}.tag-other{background:var(--surface2);color:var(--text2);}
+.spy-cell{font-size:11px;}
 .overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:200;align-items:center;justify-content:center;}
 .overlay.open{display:flex;}
-.modal{background:var(--surface);border:1px solid var(--border);border-radius:12px;width:580px;max-height:88vh;overflow-y:auto;padding:22px;}
+.modal{background:var(--surface);border:1px solid var(--border);border-radius:12px;width:600px;max-height:88vh;overflow-y:auto;padding:22px;}
 .mh{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;}
-.mt{font-size:17px;font-weight:700;}
-.mx{background:none;border:none;color:var(--text2);cursor:pointer;font-size:18px;}
-.mrow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;}
+.mt{font-size:17px;font-weight:700;}.mx{background:none;border:none;color:var(--text2);cursor:pointer;font-size:18px;}
+.mrow{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:14px;}
 .mfield{background:var(--surface2);border-radius:6px;padding:9px 11px;}
-.mfl{font-size:10px;color:var(--text3);margin-bottom:2px;}
-.mfv{font-size:13px;font-weight:600;font-family:var(--mono);}
+.mfl{font-size:10px;color:var(--text3);margin-bottom:2px;}.mfv{font-size:13px;font-weight:600;font-family:var(--mono);}
 .mlabel{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;margin-top:12px;}
 .tag-opts{display:flex;flex-wrap:wrap;gap:5px;}
 .topt{padding:4px 10px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--text2);font-size:11px;cursor:pointer;}
-.topt:hover{border-color:var(--accent);color:var(--accent);}
-.topt.sel{background:var(--accent);color:#fff;border-color:var(--accent);}
+.topt:hover{border-color:var(--accent);color:var(--accent);}.topt.sel{background:var(--accent);color:#fff;border-color:var(--accent);}
 .topt.sel-mis{background:#f97316;color:#fff;border-color:#f97316;}
 textarea{width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:5px;padding:9px 11px;color:var(--text);font-size:12px;resize:vertical;outline:none;min-height:70px;font-family:inherit;}
 textarea:focus{border-color:var(--accent);}
 .msave{width:100%;margin-top:14px;padding:9px;border-radius:7px;background:var(--accent);color:#fff;border:none;font-size:13px;font-weight:600;cursor:pointer;}
 .msave:hover{background:#2563eb;}
-
 .notif{position:fixed;bottom:18px;right:18px;background:var(--surface2);border:1px solid var(--border);border-radius:7px;padding:10px 16px;font-size:12px;z-index:999;transform:translateY(100px);transition:transform .3s;}
-.notif.show{transform:translateY(0);}
-.notif.ok{border-color:var(--green);}
-.notif.err{border-color:var(--red);}
-
-.pos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;}
+.notif.show{transform:translateY(0);}.notif.ok{border-color:var(--green);}.notif.err{border-color:var(--red);}
+.pos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;}
 .pcard{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:14px;cursor:pointer;}
 .pcard:hover{border-color:var(--accent);}
 .pcard-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;}
-.pcard-sym{font-size:15px;font-weight:700;}
-.pcard-type{font-size:9px;color:var(--text3);background:var(--surface2);padding:2px 5px;border-radius:3px;}
+.pcard-sym{font-size:15px;font-weight:700;}.pcard-type{font-size:9px;color:var(--text3);background:var(--surface2);padding:2px 5px;border-radius:3px;}
 .pcard-pnl{font-size:17px;font-weight:700;font-family:var(--mono);margin-bottom:3px;}
 .pcard-details{font-size:10px;color:var(--text2);line-height:1.7;}
 .pcard-spy{font-size:10px;margin-top:6px;padding-top:6px;border-top:1px solid var(--border);}
-
 @media(max-width:768px){.stats{grid-template-columns:repeat(2,1fr);}.main{padding:10px;}}
 </style>
 </head>
 <body>
-
 <nav class="nav">
   <div class="logo">Trading<span>Journal</span></div>
   <div class="nav-right">
-    <span class="sync-time" id="syncTime">Never synced</span>
+    <span class="sync-time" id="syncTime">Loading...</span>
     <button class="btn btn-ghost" onclick="exportCSV()">⬇ CSV</button>
   </div>
 </nav>
-
 <div class="tabs">
   <div class="tab active" onclick="switchTab('open')">Open Positions</div>
   <div class="tab" onclick="switchTab('closed')">Closed Trades</div>
   <div class="tab" onclick="switchTab('stats')">Statistics</div>
 </div>
-
 <div class="main">
-
-  <!-- OPEN -->
   <div id="tab-open">
     <div class="stats" id="openStats"></div>
     <div class="pos-grid" id="posGrid"></div>
   </div>
-
-  <!-- CLOSED -->
   <div id="tab-closed" style="display:none">
     <div class="stats" id="closedStats"></div>
     <div class="filters">
       <input class="fi" id="srch" placeholder="🔍 Symbol..." oninput="applyFilters()" style="width:120px">
-      <select class="fi" id="fSetup" onchange="applyFilters()">
-        <option value="">All Setups</option>
-        <option>VCP</option><option>EP</option><option>Breakout</option>
-        <option>Pullback</option><option>Base</option><option>Short</option><option>Other</option>
-      </select>
-      <select class="fi" id="fMistake" onchange="applyFilters()">
-        <option value="">All Mistakes</option>
-        <option>Early Entry</option><option>Late Entry</option><option>Too Small</option>
-        <option>Too Big</option><option>No Stop</option><option>Moved Stop</option>
-        <option>FOMO</option><option>Revenge</option><option>No Plan</option>
-      </select>
-      <select class="fi" id="fResult" onchange="applyFilters()">
-        <option value="">W / L</option>
-        <option value="win">Winners ✅</option>
-        <option value="loss">Losers ❌</option>
-      </select>
-      <select class="fi" id="fPeriod" onchange="applyFilters()">
-        <option value="">All Time</option>
-        <option value="week">This Week</option>
-        <option value="month">This Month</option>
-        <option value="ytd">YTD</option>
-      </select>
-      <select class="fi" id="fType" onchange="applyFilters()">
-        <option value="">All Types</option>
-        <option value="STK">Stocks</option>
-        <option value="OPT">Options</option>
-        <option value="FUT">Futures</option>
-      </select>
+      <select class="fi" id="fSetup" onchange="applyFilters()"><option value="">All Setups</option><option>VCP</option><option>EP</option><option>Breakout</option><option>Pullback</option><option>Base</option><option>Short</option><option>Other</option></select>
+      <select class="fi" id="fMistake" onchange="applyFilters()"><option value="">All Mistakes</option><option>Early Entry</option><option>Late Entry</option><option>Too Small</option><option>Too Big</option><option>No Stop</option><option>Moved Stop</option><option>FOMO</option><option>Revenge</option><option>No Plan</option></select>
+      <select class="fi" id="fResult" onchange="applyFilters()"><option value="">W / L</option><option value="win">Winners ✅</option><option value="loss">Losers ❌</option></select>
+      <select class="fi" id="fPeriod" onchange="applyFilters()"><option value="">All Time</option><option value="week">This Week</option><option value="month">This Month</option><option value="ytd">YTD</option></select>
+      <select class="fi" id="fType" onchange="applyFilters()"><option value="">All Types</option><option value="STK">Stocks</option><option value="OPT">Options</option><option value="FUT">Futures</option></select>
       <button class="btn btn-ghost" onclick="resetFilters()">Reset</button>
     </div>
     <div class="table-wrap">
       <table>
         <thead><tr>
-          <th onclick="srt('entry_date')">Entry Date ↕</th>
-          <th onclick="srt('exit_date')">Exit Date ↕</th>
+          <th onclick="srt('entry_date')">Entry ↕</th>
+          <th onclick="srt('exit_date')">Exit ↕</th>
           <th onclick="srt('days')">Days ↕</th>
           <th onclick="srt('symbol')">Ticker ↕</th>
           <th>Qty</th>
@@ -172,6 +113,8 @@ textarea:focus{border-color:var(--accent);}
           <th onclick="srt('exit_price')">Exit $</th>
           <th onclick="srt('pnl_pct')">P&L %</th>
           <th onclick="srt('pnl')">P&L $</th>
+          <th>SPY %</th>
+          <th>Alpha</th>
           <th>Setup</th>
           <th>Mistake</th>
           <th>Note</th>
@@ -180,30 +123,13 @@ textarea:focus{border-color:var(--accent);}
       </table>
     </div>
   </div>
-
-  <!-- STATS -->
   <div id="tab-stats" style="display:none">
     <div class="stats" id="statsCards"></div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px">
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Setup</th><th>Trades</th><th>Win%</th><th>Avg P&L%</th><th>Total $</th></tr></thead>
-          <tbody id="setupTbl"></tbody>
-        </table>
-      </div>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Month</th><th>Trades</th><th>Win%</th><th>P&L $</th></tr></thead>
-          <tbody id="monthTbl"></tbody>
-        </table>
-      </div>
+      <div class="table-wrap"><table><thead><tr><th>Setup</th><th>Trades</th><th>Win%</th><th>Avg P&L%</th><th>Total $</th></tr></thead><tbody id="setupTbl"></tbody></table></div>
+      <div class="table-wrap"><table><thead><tr><th>Month</th><th>Trades</th><th>Win%</th><th>P&L $</th></tr></thead><tbody id="monthTbl"></tbody></table></div>
     </div>
-    <div style="margin-top:14px" class="table-wrap">
-      <table>
-        <thead><tr><th>Mistake</th><th>Trades</th><th>Win%</th><th>Avg P&L%</th><th>Total $</th></tr></thead>
-        <tbody id="mistakeTbl"></tbody>
-      </table>
-    </div>
+    <div style="margin-top:14px" class="table-wrap"><table><thead><tr><th>Mistake</th><th>Trades</th><th>Win%</th><th>Avg P&L%</th><th>Total $</th></tr></thead><tbody id="mistakeTbl"></tbody></table></div>
   </div>
 </div>
 
@@ -212,26 +138,20 @@ textarea:focus{border-color:var(--accent);}
   <div class="modal">
     <div class="mh"><div class="mt" id="mTitle">Trade</div><button class="mx" onclick="closeModal()">✕</button></div>
     <div class="mrow" id="mFields"></div>
+    <div style="background:var(--surface2);border-radius:6px;padding:10px 12px;margin-bottom:12px;" id="mSpy"></div>
     <div class="mlabel">Setup</div>
     <div class="tag-opts" id="setupOpts">
-      <div class="topt" onclick="pickSetup(this)">VCP</div>
-      <div class="topt" onclick="pickSetup(this)">EP</div>
-      <div class="topt" onclick="pickSetup(this)">Breakout</div>
-      <div class="topt" onclick="pickSetup(this)">Pullback</div>
-      <div class="topt" onclick="pickSetup(this)">Base</div>
-      <div class="topt" onclick="pickSetup(this)">Short</div>
+      <div class="topt" onclick="pickSetup(this)">VCP</div><div class="topt" onclick="pickSetup(this)">EP</div>
+      <div class="topt" onclick="pickSetup(this)">Breakout</div><div class="topt" onclick="pickSetup(this)">Pullback</div>
+      <div class="topt" onclick="pickSetup(this)">Base</div><div class="topt" onclick="pickSetup(this)">Short</div>
       <div class="topt" onclick="pickSetup(this)">Other</div>
     </div>
     <div class="mlabel">Mistake</div>
     <div class="tag-opts" id="mistakeOpts">
-      <div class="topt" onclick="pickMistake(this)">Early Entry</div>
-      <div class="topt" onclick="pickMistake(this)">Late Entry</div>
-      <div class="topt" onclick="pickMistake(this)">Too Small</div>
-      <div class="topt" onclick="pickMistake(this)">Too Big</div>
-      <div class="topt" onclick="pickMistake(this)">No Stop</div>
-      <div class="topt" onclick="pickMistake(this)">Moved Stop</div>
-      <div class="topt" onclick="pickMistake(this)">FOMO</div>
-      <div class="topt" onclick="pickMistake(this)">Revenge</div>
+      <div class="topt" onclick="pickMistake(this)">Early Entry</div><div class="topt" onclick="pickMistake(this)">Late Entry</div>
+      <div class="topt" onclick="pickMistake(this)">Too Small</div><div class="topt" onclick="pickMistake(this)">Too Big</div>
+      <div class="topt" onclick="pickMistake(this)">No Stop</div><div class="topt" onclick="pickMistake(this)">Moved Stop</div>
+      <div class="topt" onclick="pickMistake(this)">FOMO</div><div class="topt" onclick="pickMistake(this)">Revenge</div>
       <div class="topt" onclick="pickMistake(this)">No Plan</div>
     </div>
     <div class="mlabel">Notes</div>
@@ -247,18 +167,18 @@ let TOKEN=localStorage.getItem('gh_token')||'';
 const RAW=`https://raw.githubusercontent.com/${REPO}/main/`;
 let closedTrades=[],positions=[],notes={},filtered=[];
 let sortKey='exit_date',sortDir=-1,currentId=null;
+let spySeries={};  // date -> close price
 
+// ── INIT ──────────────────────────────────────────────────────────────────
 async function init(){
   if(!TOKEN){TOKEN=prompt('GitHub token:');if(!TOKEN)return;localStorage.setItem('gh_token',TOKEN);}
-  await load();
+  await Promise.all([load(), loadSPY()]);
 }
 
+// ── LOAD DATA ─────────────────────────────────────────────────────────────
 async function load(){
   try{
-    const[dRes,nRes]=await Promise.all([
-      fetch(RAW+'data.json?t='+Date.now()),
-      fetch(RAW+'notes.json?t='+Date.now())
-    ]);
+    const[dRes,nRes]=await Promise.all([fetch(RAW+'data.json?t='+Date.now()),fetch(RAW+'notes.json?t='+Date.now())]);
     const data=await dRes.json();
     notes=await nRes.json();
     closedTrades=(data.closed_trades||[]).map(t=>({...t,note:notes[t.id]||{}}));
@@ -267,78 +187,108 @@ async function load(){
       const d=new Date(data.last_sync);
       document.getElementById('syncTime').textContent='Synced '+d.toLocaleDateString('en-GB',{day:'2-digit',month:'short'})+' '+d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
     }
-    renderAll();
   }catch(e){showNotif('Load failed','err');console.error(e);}
 }
 
+// ── SPY TIME SERIES (fetched once, cached in localStorage) ────────────────
+async function loadSPY(){
+  // Check localStorage cache (valid for 24h)
+  const cached=localStorage.getItem('spy_cache');
+  const cachedDate=localStorage.getItem('spy_cache_date');
+  if(cached && cachedDate && (Date.now()-parseInt(cachedDate))<86400000){
+    spySeries=JSON.parse(cached);
+    console.log('SPY from cache:',Object.keys(spySeries).length,'days');
+    renderAll();
+    return;
+  }
+  try{
+    const end=Math.floor(Date.now()/1000);
+    const start=end-2*365*86400;
+    const url=`https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1d&period1=${start}&period2=${end}`;
+    const r=await fetch(url);
+    const d=await r.json();
+    const ts=d.chart.result[0].timestamp;
+    const cl=d.chart.result[0].indicators.quote[0].close;
+    spySeries={};
+    ts.forEach((t,i)=>{if(cl[i]){const dt=new Date(t*1000);spySeries[dt.toISOString().slice(0,10)]=Math.round(cl[i]*100)/100;}});
+    localStorage.setItem('spy_cache',JSON.stringify(spySeries));
+    localStorage.setItem('spy_cache_date',Date.now().toString());
+    console.log('SPY fetched:',Object.keys(spySeries).length,'days');
+  }catch(e){
+    console.warn('SPY fetch failed:',e.message);
+    spySeries={};
+  }
+  renderAll();
+}
+
+// ── SPY PERFORMANCE CALC ─────────────────────────────────────────────────
+function spyPerf(fromDate, toDate){
+  if(!fromDate||!toDate||!Object.keys(spySeries).length) return null;
+  const from=fromDate.slice(0,10);
+  const to=toDate.slice(0,10);
+  // Find nearest available prices
+  const dates=Object.keys(spySeries).sort();
+  const findNearest=(target,after=true)=>{
+    if(after) return dates.find(d=>d>=target);
+    else return [...dates].reverse().find(d=>d<=target);
+  };
+  const d0=findNearest(from,true);
+  const d1=findNearest(to,false);
+  if(!d0||!d1||!spySeries[d0]||!spySeries[d1]) return null;
+  return (spySeries[d1]-spySeries[d0])/spySeries[d0]*100;
+}
+
+// ── RENDER ALL ────────────────────────────────────────────────────────────
 function renderAll(){renderOpen();applyFilters();renderStats();}
 
-// ── OPEN ──────────────────────────────────────────────────────────────────
+// ── OPEN POSITIONS ────────────────────────────────────────────────────────
 function renderOpen(){
   const grid=document.getElementById('posGrid');
-  const statsEl=document.getElementById('openStats');
+  const sEl=document.getElementById('openStats');
   const totalUnreal=positions.reduce((s,p)=>s+(p.unrealized_pnl||0),0);
   const totalVal=positions.reduce((s,p)=>s+(p.market_value||0),0);
   const daily=positions.reduce((s,p)=>s+(p.daily_pnl||0),0);
-  const winners=positions.filter(p=>(p.unrealized_pnl||0)>0).length;
-  const losers=positions.filter(p=>(p.unrealized_pnl||0)<0).length;
-  statsEl.innerHTML=`
+  const w=positions.filter(p=>(p.unrealized_pnl||0)>0).length;
+  const l=positions.filter(p=>(p.unrealized_pnl||0)<0).length;
+  sEl.innerHTML=`
     <div class="stat"><div class="stat-label">Positions</div><div class="stat-value neu">${positions.length}</div></div>
     <div class="stat"><div class="stat-label">Market Value</div><div class="stat-value neu">$${fmt(totalVal)}</div></div>
     <div class="stat"><div class="stat-label">Unrealized P&L</div><div class="stat-value ${totalUnreal>=0?'pos':'neg'}">${sg(totalUnreal)}$${fmt(Math.abs(totalUnreal))}</div></div>
     <div class="stat"><div class="stat-label">Day P&L</div><div class="stat-value ${daily>=0?'pos':'neg'}">${sg(daily)}$${fmt(Math.abs(daily))}</div></div>
-    <div class="stat"><div class="stat-label">W / L</div><div class="stat-value neu">${winners} / ${losers}</div></div>
+    <div class="stat"><div class="stat-label">W / L</div><div class="stat-value neu">${w} / ${l}</div></div>
     <div class="stat"><div class="stat-label">Avg P&L%</div><div class="stat-value ${totalUnreal>=0?'pos':'neg'}">${totalVal?fp(totalUnreal/totalVal*100):'—'}</div></div>`;
 
   if(!positions.length){grid.innerHTML='<div style="padding:40px;text-align:center;color:var(--text3)">No open positions</div>';return;}
+  const today=new Date().toISOString().slice(0,10);
   grid.innerHTML=positions.filter(p=>p.position!==0).map(p=>{
     const pnl=p.unrealized_pnl||0;
     const cost=p.average_price*Math.abs(p.position);
     const pct=cost?pnl/cost*100:0;
     const n=notes[p.symbol]||{};
-    const entryDt=p.entry_date?p.entry_date.slice(0,10):'—';
+    const entryD=p.entry_date?p.entry_date.slice(0,10):'—';
     const days=p.days_held||0;
+    const spyP=p.entry_date?spyPerf(p.entry_date,new Date().toISOString()):null;
+    const alpha=spyP!==null?pct-spyP:null;
     const uid=p.symbol.replace(/[^a-z0-9]/gi,'_');
-    return`<div class="pcard" onclick="openPosModal('${p.symbol}')">
+    return`<div class="pcard" onclick="openPosModal('${p.symbol.replace(/'/g,"\\'")}')">
       <div class="pcard-top"><div class="pcard-sym">${p.symbol}</div><div class="pcard-type">${p.asset_class}</div></div>
       ${n.setup?renderTag(n.setup):''}
       <div class="pcard-pnl ${pnl>=0?'pos':'neg'}">${sg(pnl)}$${fmt(Math.abs(pnl))} <span style="font-size:12px">(${fp(pct)})</span></div>
       <div class="pcard-details">
         Qty <b>${p.position}</b> · Avg $${fmt(p.average_price)} · MV $${fmt(p.market_value)}<br>
-        Entry: <b>${entryDt}</b> · Held: <b>${days}d</b>
+        Entry: <b>${entryD}</b> · Held: <b>${days}d</b><br>
+        Day: <span class="${(p.daily_pnl||0)>=0?'pos':'neg'}">${sg(p.daily_pnl||0)}$${fmt(Math.abs(p.daily_pnl||0))}</span>
       </div>
-      <div class="pcard-spy" style="color:var(--text2)">vs SPY: <span id="spy_${uid}">…</span></div>
+      <div class="pcard-spy">
+        SPY since entry: ${spyP!==null?`<span class="${spyP>=0?'pos':'neg'}">${fp(spyP)}</span>`:'—'}
+        · Alpha: ${alpha!==null?`<span class="${alpha>=0?'pos':'neg'}">${sg(alpha)}${Math.abs(alpha).toFixed(1)}%</span>`:'—'}
+      </div>
       ${n.note?`<div style="margin-top:5px;font-size:10px;color:var(--text2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${n.note}</div>`:''}
     </div>`;
   }).join('');
-
-  // SPY comparison
-  positions.filter(p=>p.position!==0&&p.entry_date).forEach(p=>{
-    const uid=p.symbol.replace(/[^a-z0-9]/gi,'_');
-    const cost=p.average_price*Math.abs(p.position);
-    const myPct=cost?(p.unrealized_pnl||0)/cost*100:0;
-    fetchSPY(p.entry_date.slice(0,10)).then(spyPct=>{
-      const diff=myPct-spyPct;
-      const el=document.getElementById('spy_'+uid);
-      if(el)el.innerHTML=`<span class="${spyPct>=0?'pos':'neg'}">${fp(spyPct)}</span> · Alpha: <span class="${diff>=0?'pos':'neg'}">${sg(diff)}${Math.abs(diff).toFixed(1)}%</span>`;
-    });
-  });
 }
 
-const spyCache={};
-async function fetchSPY(fromDate){
-  if(spyCache[fromDate]!==undefined)return spyCache[fromDate];
-  try{
-    const url=`https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1d&period1=${Math.floor(new Date(fromDate).getTime()/1000)}&period2=${Math.floor(Date.now()/1000)}`;
-    const r=await fetch('https://api.allorigins.win/raw?url='+encodeURIComponent(url));
-    const d=await r.json();
-    const closes=d.chart.result[0].indicators.quote[0].close;
-    if(closes&&closes.length>=2){const p=(closes[closes.length-1]-closes[0])/closes[0]*100;spyCache[fromDate]=p;return p;}
-  }catch(e){}
-  spyCache[fromDate]=0;return 0;
-}
-
-// ── CLOSED ────────────────────────────────────────────────────────────────
+// ── CLOSED TRADES ─────────────────────────────────────────────────────────
 function applyFilters(){
   const srch=document.getElementById('srch').value.toLowerCase();
   const fS=document.getElementById('fSetup').value;
@@ -347,7 +297,6 @@ function applyFilters(){
   const fP=document.getElementById('fPeriod').value;
   const fT=document.getElementById('fType').value;
   const now=new Date();
-
   filtered=closedTrades.filter(t=>{
     const n=t.note||{};
     if(srch&&!t.symbol.toLowerCase().includes(srch))return false;
@@ -364,32 +313,35 @@ function applyFilters(){
     }
     return true;
   });
-
-  filtered.sort((a,b)=>{
-    const va=a[sortKey],vb=b[sortKey];
-    return va<vb?-sortDir:va>vb?sortDir:0;
-  });
-
+  filtered.sort((a,b)=>{const va=a[sortKey],vb=b[sortKey];return va<vb?-sortDir:va>vb?sortDir:0;});
   renderTable();renderClosedStats();
 }
 
 function renderTable(){
   const tbody=document.getElementById('tbody');
-  if(!filtered.length){tbody.innerHTML='<tr><td colspan="12" style="text-align:center;padding:30px;color:var(--text3)">No trades</td></tr>';return;}
+  if(!filtered.length){tbody.innerHTML='<tr><td colspan="14" style="text-align:center;padding:30px;color:var(--text3)">No trades</td></tr>';return;}
   tbody.innerHTML=filtered.map(t=>{
     const n=t.note||{};
     const entryD=t.entry_date?new Date(t.entry_date):null;
     const exitD=t.exit_date?new Date(t.exit_date):null;
-    return`<tr onclick="openClosedModal('${t.id.replace(/\|/g,'__')}')">
+    const spyP=t.entry_date&&t.exit_date?spyPerf(t.entry_date,t.exit_date):null;
+    const alpha=spyP!==null?t.pnl_pct-spyP:null;
+    return`<tr onclick="openClosedModal('${encodeId(t.id)}')">
       <td class="mono" style="color:var(--text2)">${entryD?fd(entryD):'—'}</td>
       <td class="mono" style="color:var(--text2)">${exitD?fd(exitD):'—'}</td>
       <td class="mono">${t.days}d</td>
-      <td><div class="sym">${t.symbol}</div>${t.company_name?`<div class="co">${t.company_name.substring(0,20)}</div>`:''}</td>
+      <td><div class="sym">${t.symbol}</div>${t.company_name?`<div class="co">${t.company_name.substring(0,18)}</div>`:''}</td>
       <td class="mono">${Number.isInteger(t.qty)?t.qty:t.qty.toFixed(2)}</td>
       <td class="mono" style="color:var(--text2)">$${fmt(t.entry_price)}</td>
       <td class="mono" style="color:var(--text2)">$${fmt(t.exit_price)}</td>
       <td class="mono ${t.pnl>=0?'pos':'neg'}">${fp(t.pnl_pct)}</td>
       <td class="mono ${t.pnl>=0?'pos':'neg'}">${sg(t.pnl)}$${fmt(Math.abs(t.pnl))}</td>
+      <td class="mono spy-cell ${spyP!==null?(spyP>=0?'pos':'neg'):''}">
+        ${spyP!==null?fp(spyP):'<span style="color:var(--text3)">…</span>'}
+      </td>
+      <td class="mono spy-cell ${alpha!==null?(alpha>=0?'pos':'neg'):''}">
+        ${alpha!==null?`${sg(alpha)}${Math.abs(alpha).toFixed(1)}%`:'<span style="color:var(--text3)">…</span>'}
+      </td>
       <td>${n.setup?renderTag(n.setup):'<span style="color:var(--text3)">—</span>'}</td>
       <td>${n.mistake?`<span class="tag tag-mistake">${n.mistake}</span>`:'<span style="color:var(--text3)">—</span>'}</td>
       <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis;color:var(--text2)">${n.note||''}</td>
@@ -407,16 +359,22 @@ function renderClosedStats(){
   const aL=l.length?l.reduce((s,t)=>s+t.pnl_pct,0)/l.length:0;
   const pf=aL?Math.abs(aW/aL):0;
   const aD=ts.reduce((s,t)=>s+t.days,0)/ts.length;
+  // Avg alpha
+  const withAlpha=ts.filter(t=>t.entry_date&&t.exit_date).map(t=>{
+    const sp=spyPerf(t.entry_date,t.exit_date);
+    return sp!==null?t.pnl_pct-sp:null;
+  }).filter(a=>a!==null);
+  const avgAlpha=withAlpha.length?withAlpha.reduce((s,a)=>s+a,0)/withAlpha.length:null;
   el.innerHTML=`
     <div class="stat"><div class="stat-label">Total P&L</div><div class="stat-value ${tot>=0?'pos':'neg'}">${sg(tot)}$${fmt(Math.abs(tot))}</div><div class="stat-sub">${ts.length} trades</div></div>
     <div class="stat"><div class="stat-label">Win Rate</div><div class="stat-value ${wr>=50?'pos':'neg'}">${wr.toFixed(1)}%</div><div class="stat-sub">${w.length}W / ${l.length}L</div></div>
     <div class="stat"><div class="stat-label">Avg Win%</div><div class="stat-value pos">${fp(aW)}</div></div>
     <div class="stat"><div class="stat-label">Avg Loss%</div><div class="stat-value neg">${fp(aL)}</div></div>
     <div class="stat"><div class="stat-label">Profit Factor</div><div class="stat-value ${pf>=1?'pos':'neg'}">${pf.toFixed(2)}</div></div>
-    <div class="stat"><div class="stat-label">Avg Hold</div><div class="stat-value neu">${aD.toFixed(1)}d</div></div>`;
+    <div class="stat"><div class="stat-label">Avg Alpha</div><div class="stat-value ${avgAlpha!==null&&avgAlpha>=0?'pos':'neg'}">${avgAlpha!==null?`${sg(avgAlpha)}${Math.abs(avgAlpha).toFixed(1)}%`:'—'}</div><div class="stat-sub">vs SPY per trade</div></div>`;
 }
 
-// ── STATS ─────────────────────────────────────────────────────────────────
+// ── STATS TAB ─────────────────────────────────────────────────────────────
 function renderStats(){
   const ts=closedTrades;if(!ts.length)return;
   const tot=ts.reduce((s,t)=>s+t.pnl,0);
@@ -427,21 +385,22 @@ function renderStats(){
   const pf=aL?Math.abs(aW/aL):0;
   const best=ts.reduce((a,b)=>a.pnl_pct>b.pnl_pct?a:b,ts[0]);
   const worst=ts.reduce((a,b)=>a.pnl_pct<b.pnl_pct?a:b,ts[0]);
+  const withAlpha=ts.filter(t=>t.entry_date&&t.exit_date).map(t=>{const sp=spyPerf(t.entry_date,t.exit_date);return sp!==null?t.pnl_pct-sp:null;}).filter(a=>a!==null);
+  const avgAlpha=withAlpha.length?withAlpha.reduce((s,a)=>s+a,0)/withAlpha.length:null;
   document.getElementById('statsCards').innerHTML=`
-    <div class="stat"><div class="stat-label">YTD P&L</div><div class="stat-value ${tot>=0?'pos':'neg'}">${sg(tot)}$${fmt(Math.abs(tot))}</div><div class="stat-sub">${ts.length} trades</div></div>
+    <div class="stat"><div class="stat-label">YTD P&L</div><div class="stat-value ${tot>=0?'pos':'neg'}">${sg(tot)}$${fmt(Math.abs(tot))}</div><div class="stat-sub">${ts.length} closed trades</div></div>
     <div class="stat"><div class="stat-label">Win Rate</div><div class="stat-value ${wr>=50?'pos':'neg'}">${wr.toFixed(1)}%</div><div class="stat-sub">${w.length}W / ${l.length}L</div></div>
     <div class="stat"><div class="stat-label">Profit Factor</div><div class="stat-value ${pf>=1?'pos':'neg'}">${pf.toFixed(2)}</div></div>
     <div class="stat"><div class="stat-label">Avg Win / Loss</div><div class="stat-value neu">${fp(aW)} / ${fp(-aL)}</div></div>
     <div class="stat"><div class="stat-label">Best Trade</div><div class="stat-value pos">${best.symbol} ${fp(best.pnl_pct)}</div></div>
-    <div class="stat"><div class="stat-label">Worst Trade</div><div class="stat-value neg">${worst.symbol} ${fp(worst.pnl_pct)}</div></div>`;
+    <div class="stat"><div class="stat-label">Avg Alpha vs SPY</div><div class="stat-value ${avgAlpha!==null&&avgAlpha>=0?'pos':'neg'}">${avgAlpha!==null?`${sg(avgAlpha)}${Math.abs(avgAlpha).toFixed(1)}%`:'—'}</div></div>`;
 
   const setups={};
   ts.forEach(t=>{const k=t.note?.setup||'Untagged';if(!setups[k])setups[k]=[];setups[k].push(t);});
   document.getElementById('setupTbl').innerHTML=Object.entries(setups)
     .sort((a,b)=>b[1].reduce((s,t)=>s+t.pnl,0)-a[1].reduce((s,t)=>s+t.pnl,0))
     .map(([tag,ts])=>{
-      const tot=ts.reduce((s,t)=>s+t.pnl,0);
-      const w=ts.filter(t=>t.pnl>0).length;
+      const tot=ts.reduce((s,t)=>s+t.pnl,0);const w=ts.filter(t=>t.pnl>0).length;
       const avg=ts.reduce((s,t)=>s+t.pnl_pct,0)/ts.length;
       return`<tr><td>${renderTag(tag)}</td><td class="mono">${ts.length}</td><td class="mono ${w/ts.length>=.5?'pos':'neg'}">${(w/ts.length*100).toFixed(0)}%</td><td class="mono ${avg>=0?'pos':'neg'}">${fp(avg)}</td><td class="mono ${tot>=0?'pos':'neg'}">${sg(tot)}$${fmt(Math.abs(tot))}</td></tr>`;
     }).join('');
@@ -451,8 +410,7 @@ function renderStats(){
   document.getElementById('monthTbl').innerHTML=Object.entries(months)
     .sort((a,b)=>new Date(b[0])-new Date(a[0]))
     .map(([m,ts])=>{
-      const tot=ts.reduce((s,t)=>s+t.pnl,0);
-      const w=ts.filter(t=>t.pnl>0).length;
+      const tot=ts.reduce((s,t)=>s+t.pnl,0);const w=ts.filter(t=>t.pnl>0).length;
       return`<tr><td style="color:var(--text2)">${m}</td><td class="mono">${ts.length}</td><td class="mono ${w/ts.length>=.5?'pos':'neg'}">${(w/ts.length*100).toFixed(0)}%</td><td class="mono ${tot>=0?'pos':'neg'}">${sg(tot)}$${fmt(Math.abs(tot))}</td></tr>`;
     }).join('');
 
@@ -461,22 +419,25 @@ function renderStats(){
   document.getElementById('mistakeTbl').innerHTML=Object.entries(mistakes)
     .sort((a,b)=>b[1].length-a[1].length)
     .map(([tag,ts])=>{
-      const tot=ts.reduce((s,t)=>s+t.pnl,0);
-      const w=ts.filter(t=>t.pnl>0).length;
+      const tot=ts.reduce((s,t)=>s+t.pnl,0);const w=ts.filter(t=>t.pnl>0).length;
       const avg=ts.reduce((s,t)=>s+t.pnl_pct,0)/ts.length;
       return`<tr><td><span class="tag tag-mistake">${tag}</span></td><td class="mono">${ts.length}</td><td class="mono ${w/ts.length>=.5?'pos':'neg'}">${(w/ts.length*100).toFixed(0)}%</td><td class="mono ${avg>=0?'pos':'neg'}">${fp(avg)}</td><td class="mono ${tot>=0?'pos':'neg'}">${sg(tot)}$${fmt(Math.abs(tot))}</td></tr>`;
     }).join('');
 }
 
 // ── MODALS ────────────────────────────────────────────────────────────────
-function openClosedModal(idEncoded){
-  const id=idEncoded.replace(/__/g,'|');
-  const t=closedTrades.find(x=>x.id===id);
-  if(!t)return;
+function encodeId(id){return encodeURIComponent(id);}
+function decodeId(id){return decodeURIComponent(id);}
+
+function openClosedModal(encId){
+  const id=decodeId(encId);
+  const t=closedTrades.find(x=>x.id===id);if(!t)return;
   currentId=id;
   const n=t.note||{};
   const entryD=t.entry_date?new Date(t.entry_date):null;
   const exitD=t.exit_date?new Date(t.exit_date):null;
+  const spyP=t.entry_date&&t.exit_date?spyPerf(t.entry_date,t.exit_date):null;
+  const alpha=spyP!==null?t.pnl_pct-spyP:null;
   document.getElementById('mTitle').textContent=`${t.symbol} · ${entryD?fd(entryD):'?'} → ${exitD?fd(exitD):'?'}`;
   document.getElementById('mFields').innerHTML=`
     <div class="mfield"><div class="mfl">Entry Date</div><div class="mfv">${entryD?fd(entryD):'—'}</div></div>
@@ -486,7 +447,13 @@ function openClosedModal(idEncoded){
     <div class="mfield"><div class="mfl">Entry Price</div><div class="mfv">$${fmt(t.entry_price)}</div></div>
     <div class="mfield"><div class="mfl">Exit Price</div><div class="mfv">$${fmt(t.exit_price)}</div></div>
     <div class="mfield"><div class="mfl">P&L %</div><div class="mfv ${t.pnl>=0?'pos':'neg'}">${fp(t.pnl_pct)}</div></div>
-    <div class="mfield"><div class="mfl">P&L $</div><div class="mfv ${t.pnl>=0?'pos':'neg'}">${sg(t.pnl)}$${fmt(Math.abs(t.pnl))}</div></div>`;
+    <div class="mfield"><div class="mfl">P&L $</div><div class="mfv ${t.pnl>=0?'pos':'neg'}">${sg(t.pnl)}$${fmt(Math.abs(t.pnl))}</div></div>
+    <div class="mfield"><div class="mfl">Commission</div><div class="mfv" style="color:var(--text2)">$${fmt(t.commission)}</div></div>`;
+  document.getElementById('mSpy').innerHTML=`
+    <span style="color:var(--text3);font-size:10px;text-transform:uppercase;letter-spacing:.5px">SPY same period</span>
+    <span style="margin-left:12px;font-family:var(--mono);font-weight:600" class="${spyP!==null?(spyP>=0?'pos':'neg'):''}">${spyP!==null?fp(spyP):'—'}</span>
+    <span style="margin-left:12px;color:var(--text2);font-size:11px">Alpha:</span>
+    <span style="margin-left:4px;font-family:var(--mono);font-weight:600" class="${alpha!==null?(alpha>=0?'pos':'neg'):''}">${alpha!==null?`${sg(alpha)}${Math.abs(alpha).toFixed(2)}%`:'—'}</span>`;
   restoreTags(n);
   document.getElementById('tNote').value=n.note||'';
   document.getElementById('modal').classList.add('open');
@@ -500,6 +467,8 @@ function openPosModal(sym){
   const cost=p.average_price*Math.abs(p.position);
   const pct=cost?pnl/cost*100:0;
   const entryD=p.entry_date?new Date(p.entry_date):null;
+  const spyP=p.entry_date?spyPerf(p.entry_date,new Date().toISOString()):null;
+  const alpha=spyP!==null?pct-spyP:null;
   document.getElementById('mTitle').textContent=`${sym} — Open Position`;
   document.getElementById('mFields').innerHTML=`
     <div class="mfield"><div class="mfl">Entry Date</div><div class="mfv">${entryD?fd(entryD):'—'}</div></div>
@@ -509,7 +478,13 @@ function openPosModal(sym){
     <div class="mfield"><div class="mfl">Market Price</div><div class="mfv">$${fmt(p.market_price)}</div></div>
     <div class="mfield"><div class="mfl">Market Value</div><div class="mfv">$${fmt(p.market_value)}</div></div>
     <div class="mfield"><div class="mfl">P&L %</div><div class="mfv ${pnl>=0?'pos':'neg'}">${fp(pct)}</div></div>
-    <div class="mfield"><div class="mfl">P&L $</div><div class="mfv ${pnl>=0?'pos':'neg'}">${sg(pnl)}$${fmt(Math.abs(pnl))}</div></div>`;
+    <div class="mfield"><div class="mfl">P&L $</div><div class="mfv ${pnl>=0?'pos':'neg'}">${sg(pnl)}$${fmt(Math.abs(pnl))}</div></div>
+    <div class="mfield"><div class="mfl">Day P&L</div><div class="mfv ${(p.daily_pnl||0)>=0?'pos':'neg'}">${sg(p.daily_pnl||0)}$${fmt(Math.abs(p.daily_pnl||0))}</div></div>`;
+  document.getElementById('mSpy').innerHTML=`
+    <span style="color:var(--text3);font-size:10px;text-transform:uppercase;letter-spacing:.5px">SPY since entry</span>
+    <span style="margin-left:12px;font-family:var(--mono);font-weight:600" class="${spyP!==null?(spyP>=0?'pos':'neg'):''}">${spyP!==null?fp(spyP):'—'}</span>
+    <span style="margin-left:12px;color:var(--text2);font-size:11px">Alpha:</span>
+    <span style="margin-left:4px;font-family:var(--mono);font-weight:600" class="${alpha!==null?(alpha>=0?'pos':'neg'):''}">${alpha!==null?`${sg(alpha)}${Math.abs(alpha).toFixed(2)}%`:'—'}</span>`;
   restoreTags(n);
   document.getElementById('tNote').value=n.note||'';
   document.getElementById('modal').classList.add('open');
@@ -551,12 +526,10 @@ function fmt(n){if(n==null)return'—';return Math.abs(n).toLocaleString('en-US'
 function fp(n){return(n>=0?'+':'')+n.toFixed(2)+'%';}
 function fd(d){if(!d||isNaN(d))return'—';return d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'2-digit'});}
 function sg(n){return n>=0?'+':'';}
-
 function renderTag(tag){
   const cls={VCP:'tag-vcp',EP:'tag-ep',Breakout:'tag-breakout',Pullback:'tag-pullback',Base:'tag-base',Short:'tag-short'};
   return`<span class="tag ${cls[tag]||'tag-other'}">${tag}</span>`;
 }
-
 function switchTab(tab){
   ['open','closed','stats'].forEach((t,i)=>{
     document.getElementById(`tab-${t}`).style.display=t===tab?'block':'none';
@@ -565,27 +538,21 @@ function switchTab(tab){
 }
 function srt(key){if(sortKey===key)sortDir*=-1;else{sortKey=key;sortDir=-1;}applyFilters();}
 function resetFilters(){['srch','fSetup','fMistake','fResult','fPeriod','fType'].forEach(id=>{const el=document.getElementById(id);el.tagName==='INPUT'?el.value='':el.value='';});applyFilters();}
-
 function exportCSV(){
-  const rows=[['Entry Date','Exit Date','Days','Ticker','Qty','Entry $','Exit $','P&L %','P&L $','Setup','Mistake','Notes']];
+  const rows=[['Entry Date','Exit Date','Days','Ticker','Qty','Entry $','Exit $','P&L %','P&L $','SPY %','Alpha %','Setup','Mistake','Notes']];
   filtered.forEach(t=>{
     const n=t.note||{};
-    const eD=t.entry_date?fd(new Date(t.entry_date)):'';
-    const xD=t.exit_date?fd(new Date(t.exit_date)):'';
-    rows.push([eD,xD,t.days,t.symbol,t.qty,t.entry_price,t.exit_price,t.pnl_pct.toFixed(2)+'%',t.pnl.toFixed(2),n.setup||'',n.mistake||'',n.note||'']);
+    const spyP=t.entry_date&&t.exit_date?spyPerf(t.entry_date,t.exit_date):null;
+    const alpha=spyP!==null?t.pnl_pct-spyP:null;
+    rows.push([t.entry_date?fd(new Date(t.entry_date)):'',t.exit_date?fd(new Date(t.exit_date)):'',t.days,t.symbol,t.qty,t.entry_price,t.exit_price,t.pnl_pct.toFixed(2)+'%',t.pnl.toFixed(2),spyP!==null?spyP.toFixed(2)+'%':'',alpha!==null?alpha.toFixed(2)+'%':'',n.setup||'',n.mistake||'',n.note||'']);
   });
   const csv=rows.map(r=>r.map(v=>`"${v}"`).join(',')).join('\n');
-  const a=document.createElement('a');
-  a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csv);
-  a.download=`journal-${new Date().toISOString().slice(0,10)}.csv`;a.click();
+  const a=document.createElement('a');a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csv);a.download=`journal-${new Date().toISOString().slice(0,10)}.csv`;a.click();
 }
-
 function showNotif(msg,type=''){
-  const el=document.getElementById('notif');
-  el.textContent=msg;el.className=`notif show ${type}`;
+  const el=document.getElementById('notif');el.textContent=msg;el.className=`notif show ${type}`;
   setTimeout(()=>el.classList.remove('show'),3000);
 }
-
 document.getElementById('modal').addEventListener('click',e=>{if(e.target===e.currentTarget)closeModal();});
 init();
 </script>
