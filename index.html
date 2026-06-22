@@ -183,6 +183,7 @@ async function load(){
     notes=await nRes.json();
     closedTrades=(data.closed_trades||[]).map(t=>({...t,note:notes[t.id]||{}}));
     positions=data.positions||[];
+    spySeries=data.spy_series||{};
     if(data.last_sync){
       const d=new Date(data.last_sync);
       document.getElementById('syncTime').textContent='Synced '+d.toLocaleDateString('en-GB',{day:'2-digit',month:'short'})+' '+d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
@@ -190,34 +191,9 @@ async function load(){
   }catch(e){showNotif('Load failed','err');console.error(e);}
 }
 
-// ── SPY TIME SERIES (fetched once, cached in localStorage) ────────────────
+// ── SPY loaded from data.json (fetched via IBKR when syncing) ────────────
 async function loadSPY(){
-  // Check localStorage cache (valid for 24h)
-  const cached=localStorage.getItem('spy_cache');
-  const cachedDate=localStorage.getItem('spy_cache_date');
-  if(cached && cachedDate && (Date.now()-parseInt(cachedDate))<86400000){
-    spySeries=JSON.parse(cached);
-    console.log('SPY from cache:',Object.keys(spySeries).length,'days');
-    renderAll();
-    return;
-  }
-  try{
-    const end=Math.floor(Date.now()/1000);
-    const start=end-2*365*86400;
-    const url=`https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1d&period1=${start}&period2=${end}`;
-    const r=await fetch(url);
-    const d=await r.json();
-    const ts=d.chart.result[0].timestamp;
-    const cl=d.chart.result[0].indicators.quote[0].close;
-    spySeries={};
-    ts.forEach((t,i)=>{if(cl[i]){const dt=new Date(t*1000);spySeries[dt.toISOString().slice(0,10)]=Math.round(cl[i]*100)/100;}});
-    localStorage.setItem('spy_cache',JSON.stringify(spySeries));
-    localStorage.setItem('spy_cache_date',Date.now().toString());
-    console.log('SPY fetched:',Object.keys(spySeries).length,'days');
-  }catch(e){
-    console.warn('SPY fetch failed:',e.message);
-    spySeries={};
-  }
+  // SPY is now included in data.json — loaded in load()
   renderAll();
 }
 
