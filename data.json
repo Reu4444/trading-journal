@@ -1,154 +1,10 @@
 {
-  "last_sync": "2026-06-22T19:38:22.014003+00:00",
-  "source": "flex_query",
-  "positions": [
-    {
-      "symbol": "AAPL",
-      "company_name": "APPLE INC",
-      "asset_class": "STK",
-      "position": 3.0,
-      "average_price": 290.532,
-      "market_price": 298.01,
-      "market_value": 894.03,
-      "unrealized_pnl": 22.4341,
-      "daily_pnl": 0,
-      "entry_date": "2026-06-10T11:51:44Z",
-      "days_held": 12
-    },
-    {
-      "symbol": "BE",
-      "company_name": "BLOOM ENERGY CORP- A",
-      "asset_class": "STK",
-      "position": 1.0,
-      "average_price": 274.6753,
-      "market_price": 328.91,
-      "market_value": 328.91,
-      "unrealized_pnl": 54.2347,
-      "daily_pnl": 0,
-      "entry_date": "2026-06-15T12:46:33Z",
-      "days_held": 7
-    },
-    {
-      "symbol": "DELL",
-      "company_name": "DELL TECHNOLOGIES -C",
-      "asset_class": "STK",
-      "position": 1.0,
-      "average_price": 412.7305,
-      "market_price": 409.5,
-      "market_value": 409.5,
-      "unrealized_pnl": -3.2305,
-      "daily_pnl": 0,
-      "entry_date": "2026-06-15T11:38:00Z",
-      "days_held": 7
-    },
-    {
-      "symbol": "GEV",
-      "company_name": "GE VERNOVA INC",
-      "asset_class": "STK",
-      "position": 1.0,
-      "average_price": 978.0605,
-      "market_price": 1109.73,
-      "market_value": 1109.73,
-      "unrealized_pnl": 131.6695,
-      "daily_pnl": 0,
-      "entry_date": "2026-06-15T13:43:24Z",
-      "days_held": 7
-    },
-    {
-      "symbol": "MAR",
-      "company_name": "MARRIOTT INTERNATIONAL -CL A",
-      "asset_class": "STK",
-      "position": 2.0,
-      "average_price": 396.0053,
-      "market_price": 396.2,
-      "market_value": 792.4,
-      "unrealized_pnl": 0.3893,
-      "daily_pnl": 0,
-      "entry_date": "2026-06-05T10:20:04Z",
-      "days_held": 17
-    },
-    {
-      "symbol": "PENG",
-      "company_name": "PENGUIN SOLUTIONS INC",
-      "asset_class": "STK",
-      "position": 3.0,
-      "average_price": 67.057,
-      "market_price": 67.15,
-      "market_value": 201.45,
-      "unrealized_pnl": 0.2791,
-      "daily_pnl": 0,
-      "entry_date": "2026-06-18T15:27:15Z",
-      "days_held": 4
-    },
-    {
-      "symbol": "PLTR",
-      "company_name": "PALANTIR TECHNOLOGIES INC-A",
-      "asset_class": "STK",
-      "position": 2.0,
-      "average_price": 134.3803,
-      "market_price": 128.47,
-      "market_value": 256.94,
-      "unrealized_pnl": -11.8207,
-      "daily_pnl": 0,
-      "entry_date": "2026-06-15T11:40:47Z",
-      "days_held": 7
-    },
-    {
-      "symbol": "URI",
-      "company_name": "UNITED RENTALS INC",
-      "asset_class": "STK",
-      "position": 1.0,
-      "average_price": 1031.1705,
-      "market_price": 1076.81,
-      "market_value": 1076.81,
-      "unrealized_pnl": 45.6395,
-      "daily_pnl": 0,
-      "entry_date": "2026-06-03T12:07:31Z",
-      "days_held": 19
-    },
-    {
-      "symbol": "HOOD  260821P00060000",
-      "company_name": "HOOD 21AUG26 60 P",
-      "asset_class": "OPT",
-      "position": -1.0,
-      "average_price": 1.9994,
-      "market_price": 0.535,
-      "market_value": -53.5,
-      "unrealized_pnl": 146.4443,
-      "daily_pnl": 0,
-      "entry_date": "2026-06-03T11:55:11Z",
-      "days_held": 19
-    },
-    {
-      "symbol": "NOK   261218P00010000",
-      "company_name": "NOK 18DEC26 10 P",
-      "asset_class": "OPT",
-      "position": -2.0,
-      "average_price": 0.923,
-      "market_price": 1.0291,
-      "market_value": -205.82,
-      "unrealized_pnl": -21.2269,
-      "daily_pnl": 0,
-      "entry_date": "2026-05-07T12:35:01Z",
-      "days_held": 46
-    },
-    {
-      "symbol": "NOK   261218P00012000",
-      "company_name": "NOK 18DEC26 12 P",
-      "asset_class": "OPT",
-      "position": -1.0,
-      "average_price": 1.3723,
-      "market_price": 1.9264,
-      "market_value": -192.64,
-      "unrealized_pnl": -55.4144,
-      "daily_pnl": 0,
-      "entry_date": "2026-06-03T12:24:37Z",
-      "days_held": 19
-    }
-  ],
+  "last_sync": "2026-06-22T20:02:04.062882+00:00",
+  "source": "flex_query + ibkr_live",
+  "spy_series": {},
   "closed_trades": [
     {
-      "id": "BE|5332808236",
+      "id": "BE|20260615|20260618",
       "symbol": "BE",
       "company_name": "BLOOM ENERGY CORP- A",
       "sec_type": "STK",
@@ -158,12 +14,12 @@
       "qty": 1.0,
       "entry_price": 274.6753,
       "exit_price": 321.65,
-      "pnl": 46.6174,
+      "pnl": 46.62,
       "pnl_pct": 16.9718,
-      "commission": 0.3573
+      "commission": 0
     },
     {
-      "id": "PWR|5326319544",
+      "id": "PWR|20260615|20260617",
       "symbol": "PWR",
       "company_name": "QUANTA SERVICES INC",
       "sec_type": "STK",
@@ -173,12 +29,12 @@
       "qty": 1.0,
       "entry_price": 733.2605,
       "exit_price": 711.669,
-      "pnl": -21.9568,
+      "pnl": -21.96,
       "pnl_pct": -2.9944,
-      "commission": 0.3653
+      "commission": 0
     },
     {
-      "id": "MCD|5325567299",
+      "id": "MCD|20260609|20260617",
       "symbol": "MCD",
       "company_name": "MC DONALD'S-CORP",
       "sec_type": "STK",
@@ -188,12 +44,12 @@
       "qty": 2.0,
       "entry_price": 284.7753,
       "exit_price": 284.9,
-      "pnl": -0.1135,
+      "pnl": -0.11,
       "pnl_pct": -0.0199,
-      "commission": 0.3628
+      "commission": 0
     },
     {
-      "id": "BMA|5321422269",
+      "id": "BMA|20260611|20260616",
       "symbol": "BMA",
       "company_name": "BANCO MACRO SA-ADR",
       "sec_type": "STK",
@@ -203,12 +59,12 @@
       "qty": 5.0,
       "entry_price": 95.3313,
       "exit_price": 95.3,
-      "pnl": -0.5223,
+      "pnl": -0.52,
       "pnl_pct": -0.1096,
-      "commission": 0.3661
+      "commission": 0
     },
     {
-      "id": "CBOE|5318260573",
+      "id": "CBOE|20260603|20260616",
       "symbol": "CBOE",
       "company_name": "CBOE GLOBAL MARKETS INC",
       "sec_type": "STK",
@@ -218,12 +74,12 @@
       "qty": 2.0,
       "entry_price": 287.3363,
       "exit_price": 287.749,
-      "pnl": 0.4624,
+      "pnl": 0.46,
       "pnl_pct": 0.0805,
-      "commission": 0.3629
+      "commission": 0
     },
     {
-      "id": "IONQ|5317704245",
+      "id": "IONQ|20260615|20260616",
       "symbol": "IONQ",
       "company_name": "IONQ INC",
       "sec_type": "STK",
@@ -233,12 +89,12 @@
       "qty": 5.0,
       "entry_price": 62.7903,
       "exit_price": 59.54,
-      "pnl": -16.6097,
+      "pnl": -16.61,
       "pnl_pct": -5.2905,
-      "commission": 0.3584
+      "commission": 0
     },
     {
-      "id": "WMT|5315151986",
+      "id": "WMT|20260603|20260615",
       "symbol": "WMT",
       "company_name": "WALMART INC",
       "sec_type": "STK",
@@ -248,12 +104,12 @@
       "qty": 5.0,
       "entry_price": 116.0603,
       "exit_price": 120.7207,
-      "pnl": 22.9375,
+      "pnl": 22.94,
       "pnl_pct": 3.9527,
-      "commission": 0.3647
+      "commission": 0
     },
     {
-      "id": "JNJ|5311729197",
+      "id": "JNJ|20260609|20260615",
       "symbol": "JNJ",
       "company_name": "JOHNSON & JOHNSON",
       "sec_type": "STK",
@@ -263,12 +119,12 @@
       "qty": 3.0,
       "entry_price": 236.457,
       "exit_price": 236.523,
-      "pnl": -0.1679,
+      "pnl": -0.17,
       "pnl_pct": -0.0237,
-      "commission": 0.3661
+      "commission": 0
     },
     {
-      "id": "COCO|5305406857",
+      "id": "COCO|20260610|20260612",
       "symbol": "COCO",
       "company_name": "VITA COCO CO INC/THE",
       "sec_type": "STK",
@@ -278,12 +134,12 @@
       "qty": 5.0,
       "entry_price": 77.3503,
       "exit_price": 77.395,
-      "pnl": -0.1365,
+      "pnl": -0.14,
       "pnl_pct": -0.0353,
-      "commission": 0.3602
+      "commission": 0
     },
     {
-      "id": "GOOGL|5299896130",
+      "id": "GOOGL|20260609|20260611",
       "symbol": "GOOGL",
       "company_name": "ALPHABET INC-CL A",
       "sec_type": "STK",
@@ -293,12 +149,12 @@
       "qty": 3.0,
       "entry_price": 364.5858,
       "exit_price": 354.12,
-      "pnl": -31.7706,
+      "pnl": -31.77,
       "pnl_pct": -2.9047,
-      "commission": 0.3733
+      "commission": 0
     },
     {
-      "id": "UNH|5295104248",
+      "id": "UNH|20260609|20260610",
       "symbol": "UNH",
       "company_name": "UNITEDHEALTH GROUP INC",
       "sec_type": "STK",
@@ -308,12 +164,12 @@
       "qty": 3.0,
       "entry_price": 412.475,
       "exit_price": 407.75,
-      "pnl": -14.5515,
+      "pnl": -14.55,
       "pnl_pct": -1.176,
-      "commission": 0.3767
+      "commission": 0
     },
     {
-      "id": "CROX|5294693670",
+      "id": "CROX|20260608|20260610",
       "symbol": "CROX",
       "company_name": "CROCS INC",
       "sec_type": "STK",
@@ -323,12 +179,12 @@
       "qty": 5.0,
       "entry_price": 124.4103,
       "exit_price": 124.0836,
-      "pnl": -1.9983,
+      "pnl": -2.0,
       "pnl_pct": -0.3212,
-      "commission": 0.365
+      "commission": 0
     },
     {
-      "id": "TSM|5294622315",
+      "id": "TSM|20260609|20260610",
       "symbol": "TSM",
       "company_name": "TAIWAN SEMICONDUCTOR-SP ADR",
       "sec_type": "STK",
@@ -338,12 +194,12 @@
       "qty": 2.0,
       "entry_price": 428.1203,
       "exit_price": 414.71,
-      "pnl": -27.1888,
+      "pnl": -27.19,
       "pnl_pct": -3.1754,
-      "commission": 0.3681
+      "commission": 0
     },
     {
-      "id": "NBIS|5294602995",
+      "id": "NBIS|20260609|20260610",
       "symbol": "NBIS",
       "company_name": "NEBIUS GROUP NV",
       "sec_type": "STK",
@@ -353,12 +209,12 @@
       "qty": 2.0,
       "entry_price": 219.6753,
       "exit_price": 214.802,
-      "pnl": -10.1066,
+      "pnl": -10.11,
       "pnl_pct": -2.3003,
-      "commission": 0.3599
+      "commission": 0
     },
     {
-      "id": "CAT|5290371771",
+      "id": "CAT|20260603|20260609",
       "symbol": "CAT",
       "company_name": "CATERPILLAR INC",
       "sec_type": "STK",
@@ -368,12 +224,12 @@
       "qty": 1.0,
       "entry_price": 931.1835,
       "exit_price": 894.555,
-      "pnl": -36.9975,
+      "pnl": -37.0,
       "pnl_pct": -3.9732,
-      "commission": 0.3691
+      "commission": 0
     },
     {
-      "id": "TSLA|5290320759",
+      "id": "TSLA|20260608|20260609",
       "symbol": "TSLA",
       "company_name": "TESLA INC",
       "sec_type": "STK",
@@ -383,12 +239,12 @@
       "qty": 2.0,
       "entry_price": 399.6903,
       "exit_price": 394.975,
-      "pnl": -9.798,
+      "pnl": -9.8,
       "pnl_pct": -1.2257,
-      "commission": 0.3673
+      "commission": 0
     },
     {
-      "id": "CRWV|5290277608",
+      "id": "CRWV|20260608|20260609",
       "symbol": "CRWV",
       "company_name": "COREWEAVE INC-CL A",
       "sec_type": "STK",
@@ -398,12 +254,12 @@
       "qty": 5.0,
       "entry_price": 102.3753,
       "exit_price": 98.0,
-      "pnl": -22.2536,
+      "pnl": -22.25,
       "pnl_pct": -4.3475,
-      "commission": 0.3773
+      "commission": 0
     },
     {
-      "id": "QQQ|5287703708",
+      "id": "QQQ|20260608|20260609",
       "symbol": "QQQ",
       "company_name": "INVESCO QQQ TRUST SERIES 1",
       "sec_type": "STK",
@@ -412,13 +268,13 @@
       "days": 0,
       "qty": 5.0,
       "entry_price": 721.1047,
-      "exit_price": -722.94,
-      "pnl": -9.5198,
+      "exit_price": 719.2007,
+      "pnl": -9.52,
       "pnl_pct": -0.264,
-      "commission": 0.3433
+      "commission": 0
     },
     {
-      "id": "TWLO|5282295056",
+      "id": "TWLO|20260604|20260608",
       "symbol": "TWLO",
       "company_name": "TWILIO INC - A",
       "sec_type": "STK",
@@ -428,12 +284,12 @@
       "qty": 1.7277,
       "entry_price": 236.0804,
       "exit_price": 221.0295,
-      "pnl": -26.3622,
+      "pnl": -26.36,
       "pnl_pct": -6.4633,
-      "commission": 0.3588
+      "commission": 0
     },
     {
-      "id": "META|5279127819",
+      "id": "META|20260603|20260605",
       "symbol": "META",
       "company_name": "META PLATFORMS INC-CLASS A",
       "sec_type": "STK",
@@ -443,12 +299,12 @@
       "qty": 0.7407,
       "entry_price": 622.6031,
       "exit_price": 587.32,
-      "pnl": -26.4937,
+      "pnl": -26.49,
       "pnl_pct": -5.745,
-      "commission": 0.3595
+      "commission": 0
     },
     {
-      "id": "IRDM|5279051461",
+      "id": "IRDM|20260520|20260605",
       "symbol": "IRDM",
       "company_name": "IRIDIUM COMMUNICATIONS INC",
       "sec_type": "STK",
@@ -458,12 +314,12 @@
       "qty": 10.0,
       "entry_price": 45.2513,
       "exit_price": 46.5517,
-      "pnl": 12.6403,
+      "pnl": 12.64,
       "pnl_pct": 2.7934,
-      "commission": 0.3638
+      "commission": 0
     },
     {
-      "id": "STRL|5279034106",
+      "id": "STRL|20260528|20260605",
       "symbol": "STRL",
       "company_name": "STERLING INFRASTRUCTURE INC",
       "sec_type": "STK",
@@ -473,12 +329,12 @@
       "qty": 1.0271,
       "entry_price": 803.5421,
       "exit_price": 886.4297,
-      "pnl": 84.7645,
+      "pnl": 84.76,
       "pnl_pct": 10.2705,
-      "commission": 0.3694
+      "commission": 0
     },
     {
-      "id": "AAOI|5277882649",
+      "id": "AAOI|20260605|20260605",
       "symbol": "AAOI",
       "company_name": "APPLIED OPTOELECTRONICS INC",
       "sec_type": "STK",
@@ -488,12 +344,12 @@
       "qty": 2.0,
       "entry_price": 200.1493,
       "exit_price": 188.031,
-      "pnl": -24.5955,
+      "pnl": -24.6,
       "pnl_pct": -6.1443,
-      "commission": 0.3588
+      "commission": 0
     },
     {
-      "id": "CRDO|5277726242",
+      "id": "CRDO|20260605|20260605",
       "symbol": "CRDO",
       "company_name": "CREDO TECHNOLOGY GROUP HOLDI",
       "sec_type": "STK",
@@ -503,42 +359,27 @@
       "qty": 2.0,
       "entry_price": 226.7653,
       "exit_price": 214.2425,
-      "pnl": -25.4055,
+      "pnl": -25.41,
       "pnl_pct": -5.6017,
-      "commission": 0.3599
+      "commission": 0
     },
     {
-      "id": "SOFI|5276863677",
+      "id": "SOFI|20260527|20260605",
       "symbol": "SOFI",
       "company_name": "SOFI TECHNOLOGIES INC",
       "sec_type": "STK",
       "entry_date": "2026-05-27T12:46:21Z",
       "exit_date": "2026-06-05T11:21:11Z",
       "days": 8,
-      "qty": 12.0,
+      "qty": 27.0,
       "entry_price": 16.3741,
-      "exit_price": 16.095,
-      "pnl": -3.7088,
-      "pnl_pct": -1.8875,
-      "commission": 0.359
+      "exit_price": 16.1089,
+      "pnl": -7.88,
+      "pnl_pct": -1.7822,
+      "commission": 0
     },
     {
-      "id": "SOFI|5276759848",
-      "symbol": "SOFI",
-      "company_name": "SOFI TECHNOLOGIES INC",
-      "sec_type": "STK",
-      "entry_date": "2026-05-27T12:46:21Z",
-      "exit_date": "2026-06-05T11:14:56Z",
-      "days": 8,
-      "qty": 15.0,
-      "entry_price": 16.3741,
-      "exit_price": 16.12,
-      "pnl": -4.1704,
-      "pnl_pct": -1.698,
-      "commission": 0.3582
-    },
-    {
-      "id": "LSCC|5275212586",
+      "id": "LSCC|20260602|20260605",
       "symbol": "LSCC",
       "company_name": "LATTICE SEMICONDUCTOR CORP",
       "sec_type": "STK",
@@ -548,12 +389,12 @@
       "qty": 2.4414,
       "entry_price": 151.4894,
       "exit_price": 140.8801,
-      "pnl": -26.2599,
+      "pnl": -26.26,
       "pnl_pct": -7.1002,
-      "commission": 0.3583
+      "commission": 0
     },
     {
-      "id": "OPEN|5275020705",
+      "id": "OPEN|20260522|20260605",
       "symbol": "OPEN",
       "company_name": "OPENDOOR TECHNOLOGIES INC",
       "sec_type": "STK",
@@ -563,12 +404,12 @@
       "qty": 100.0,
       "entry_price": 4.657,
       "exit_price": 4.7,
-      "pnl": 3.8983,
+      "pnl": 3.9,
       "pnl_pct": 0.8371,
-      "commission": 0.3997
+      "commission": 0
     },
     {
-      "id": "ASTS|5274659205",
+      "id": "ASTS|20260604|20260605",
       "symbol": "ASTS",
       "company_name": "AST SPACEMOBILE INC",
       "sec_type": "STK",
@@ -578,12 +419,12 @@
       "qty": 4.0128,
       "entry_price": 106.7578,
       "exit_price": 100.904,
-      "pnl": -23.8505,
+      "pnl": -23.85,
       "pnl_pct": -5.5674,
-      "commission": 0.3602
+      "commission": 0
     },
     {
-      "id": "AVT|5269157404",
+      "id": "AVT|20260520|20260604",
       "symbol": "AVT",
       "company_name": "AVNET INC",
       "sec_type": "STK",
@@ -593,12 +434,12 @@
       "qty": 10.0,
       "entry_price": 84.5441,
       "exit_price": 90.05,
-      "pnl": 54.6858,
+      "pnl": 54.69,
       "pnl_pct": 6.4683,
-      "commission": 0.3728
+      "commission": 0
     },
     {
-      "id": "VRT|5268588522",
+      "id": "VRT|20260602|20260604",
       "symbol": "VRT",
       "company_name": "VERTIV HOLDINGS CO-A",
       "sec_type": "STK",
@@ -608,12 +449,12 @@
       "qty": 2.5406,
       "entry_price": 334.5427,
       "exit_price": 317.8208,
-      "pnl": -42.8514,
+      "pnl": -42.85,
       "pnl_pct": -5.0417,
-      "commission": 0.3679
+      "commission": 0
     },
     {
-      "id": "ARM|5268609043",
+      "id": "ARM|20260603|20260604",
       "symbol": "ARM",
       "company_name": "ARM HOLDINGS PLC-ADR",
       "sec_type": "STK",
@@ -623,12 +464,12 @@
       "qty": 1.0,
       "entry_price": 414.2655,
       "exit_price": 380.4127,
-      "pnl": -34.2113,
+      "pnl": -34.21,
       "pnl_pct": -8.2583,
-      "commission": 0.3585
+      "commission": 0
     },
     {
-      "id": "CIFR|5268598526",
+      "id": "CIFR|20260603|20260604",
       "symbol": "CIFR",
       "company_name": "CIPHER DIGITAL INC",
       "sec_type": "STK",
@@ -638,12 +479,12 @@
       "qty": 18.7969,
       "entry_price": 26.6193,
       "exit_price": 25.0021,
-      "pnl": -30.8187,
+      "pnl": -30.82,
       "pnl_pct": -6.1593,
-      "commission": 0.4214
+      "commission": 0
     },
     {
-      "id": "TTWO|5265316186",
+      "id": "TTWO|20260529|20260603",
       "symbol": "TTWO",
       "company_name": "TAKE-TWO INTERACTIVE SOFTWRE",
       "sec_type": "STK",
@@ -653,12 +494,12 @@
       "qty": 2.4485,
       "entry_price": 226.2222,
       "exit_price": 214.9017,
-      "pnl": -28.0803,
+      "pnl": -28.08,
       "pnl_pct": -5.0695,
-      "commission": 0.3621
+      "commission": 0
     },
     {
-      "id": "ABAT|5263134253",
+      "id": "ABAT|20260602|20260603",
       "symbol": "ABAT",
       "company_name": "AMERICAN BATTERY TECHNOLOGY",
       "sec_type": "STK",
@@ -668,27 +509,27 @@
       "qty": 75.7575,
       "entry_price": 3.9841,
       "exit_price": 3.645,
-      "pnl": -26.0818,
+      "pnl": -26.08,
       "pnl_pct": -8.6413,
-      "commission": 0.3861
+      "commission": 0
     },
     {
-      "id": "TSM|5261116832",
+      "id": "TSM|20260602|20260602",
       "symbol": "TSM",
       "company_name": "TAIWAN SEMICONDUCTOR-SP ADR",
       "sec_type": "STK",
-      "entry_date": "",
+      "entry_date": "2026-06-02T15:59:40Z",
       "exit_date": "2026-06-02T15:59:40Z",
       "days": 0,
       "qty": 1.4898,
       "entry_price": 447.0986,
       "exit_price": 446.8767,
-      "pnl": -0.6951,
+      "pnl": -0.7,
       "pnl_pct": -0.1044,
-      "commission": 0.3646
+      "commission": 0
     },
     {
-      "id": "AVT|5258551466",
+      "id": "AVT|20260520|20260602",
       "symbol": "AVT",
       "company_name": "AVNET INC",
       "sec_type": "STK",
@@ -698,12 +539,12 @@
       "qty": 2.8865,
       "entry_price": 84.5494,
       "exit_price": 94.8769,
-      "pnl": 29.4534,
+      "pnl": 29.45,
       "pnl_pct": 12.0685,
-      "commission": 0.357
+      "commission": 0
     },
     {
-      "id": "ARM|5257005930",
+      "id": "ARM|20260514|20260602",
       "symbol": "ARM",
       "company_name": "ARM HOLDINGS PLC-ADR",
       "sec_type": "STK",
@@ -713,12 +554,12 @@
       "qty": 1.0,
       "entry_price": 223.6196,
       "exit_price": 391.37,
-      "pnl": 167.3917,
+      "pnl": 167.39,
       "pnl_pct": 74.8556,
-      "commission": 0.3587
+      "commission": 0
     },
     {
-      "id": "SG|5256489829",
+      "id": "SG|20260518|20260602",
       "symbol": "SG",
       "company_name": "SWEETGREEN INC - CLASS A",
       "sec_type": "STK",
@@ -728,12 +569,12 @@
       "qty": 10.0,
       "entry_price": 8.8948,
       "exit_price": 8.771,
-      "pnl": -1.5938,
+      "pnl": -1.59,
       "pnl_pct": -1.7919,
-      "commission": 0.356
+      "commission": 0
     },
     {
-      "id": "LEU|5255916193",
+      "id": "LEU|20260601|20260602",
       "symbol": "LEU",
       "company_name": "CENTRUS ENERGY CORP-CLASS A",
       "sec_type": "STK",
@@ -743,12 +584,12 @@
       "qty": 4.0,
       "entry_price": 192.2278,
       "exit_price": 186.43,
-      "pnl": -23.5583,
+      "pnl": -23.56,
       "pnl_pct": -3.0638,
-      "commission": 0.3672
+      "commission": 0
     },
     {
-      "id": "ONDS|5254465980",
+      "id": "ONDS|20260601|20260601",
       "symbol": "ONDS",
       "company_name": "ONDAS INC",
       "sec_type": "STK",
@@ -758,12 +599,12 @@
       "qty": 31.25,
       "entry_price": 13.7565,
       "exit_price": 13.472,
-      "pnl": -9.261,
+      "pnl": -9.26,
       "pnl_pct": -2.1543,
-      "commission": 0.3714
+      "commission": 0
     },
     {
-      "id": "RKLB|5254437667",
+      "id": "RKLB|20260601|20260601",
       "symbol": "RKLB",
       "company_name": "ROCKET LAB CORP",
       "sec_type": "STK",
@@ -773,12 +614,12 @@
       "qty": 5.787,
       "entry_price": 126.1193,
       "exit_price": 122.0717,
-      "pnl": -23.7902,
+      "pnl": -23.79,
       "pnl_pct": -3.2596,
-      "commission": 0.3671
+      "commission": 0
     },
     {
-      "id": "ARM|5252706791",
+      "id": "ARM|20260514|20260601",
       "symbol": "ARM",
       "company_name": "ARM HOLDINGS PLC-ADR",
       "sec_type": "STK",
@@ -788,12 +629,12 @@
       "qty": 0.9654,
       "entry_price": 224.0205,
       "exit_price": 412.71,
-      "pnl": 181.802,
+      "pnl": 181.8,
       "pnl_pct": 84.0628,
-      "commission": 0.3588
+      "commission": 0
     },
     {
-      "id": "SOFI|5242495887",
+      "id": "SOFI|20260527|20260529",
       "symbol": "SOFI",
       "company_name": "SOFI TECHNOLOGIES INC",
       "sec_type": "STK",
@@ -803,12 +644,12 @@
       "qty": 5.0,
       "entry_price": 16.3741,
       "exit_price": 18.145,
-      "pnl": 8.5001,
+      "pnl": 8.5,
       "pnl_pct": 10.3824,
-      "commission": 0.3541
+      "commission": 0
     },
     {
-      "id": "IRDM|5242299021",
+      "id": "IRDM|20260520|20260529",
       "symbol": "IRDM",
       "company_name": "IRIDIUM COMMUNICATIONS INC",
       "sec_type": "STK",
@@ -818,12 +659,12 @@
       "qty": 6.5957,
       "entry_price": 45.2513,
       "exit_price": 48.4707,
-      "pnl": 20.875,
+      "pnl": 20.88,
       "pnl_pct": 6.9941,
-      "commission": 0.3595
+      "commission": 0
     },
     {
-      "id": "LLY|5242300072",
+      "id": "LLY|20260519|20260529",
       "symbol": "LLY",
       "company_name": "ELI LILLY & CO",
       "sec_type": "STK",
@@ -833,12 +674,12 @@
       "qty": 1.0,
       "entry_price": 1016.8805,
       "exit_price": 1114.28,
-      "pnl": 97.0259,
+      "pnl": 97.03,
       "pnl_pct": 9.5415,
-      "commission": 0.3736
+      "commission": 0
     },
     {
-      "id": "OPEN|5242326177",
+      "id": "OPEN|20260522|20260529",
       "symbol": "OPEN",
       "company_name": "OPENDOOR TECHNOLOGIES INC",
       "sec_type": "STK",
@@ -848,12 +689,12 @@
       "qty": 100.0,
       "entry_price": 4.657,
       "exit_price": 4.965,
-      "pnl": 30.3978,
+      "pnl": 30.4,
       "pnl_pct": 6.5273,
-      "commission": 0.4003
+      "commission": 0
     },
     {
-      "id": "LITE|5242108481",
+      "id": "LITE|20260527|20260529",
       "symbol": "LITE",
       "company_name": "LUMENTUM HOLDINGS INC",
       "sec_type": "STK",
@@ -863,12 +704,12 @@
       "qty": 1.0,
       "entry_price": 890.7105,
       "exit_price": 848.18,
-      "pnl": -42.8986,
+      "pnl": -42.9,
       "pnl_pct": -4.8162,
-      "commission": 0.3681
+      "commission": 0
     },
     {
-      "id": "LITE|5233654771",
+      "id": "LITE|20260527|20260527",
       "symbol": "LITE",
       "company_name": "LUMENTUM HOLDINGS INC",
       "sec_type": "STK",
@@ -878,12 +719,12 @@
       "qty": 1.0,
       "entry_price": 887.7905,
       "exit_price": 886.75,
-      "pnl": -1.4081,
+      "pnl": -1.41,
       "pnl_pct": -0.1586,
-      "commission": 0.3676
+      "commission": 0
     },
     {
-      "id": "MUFG|5231250601",
+      "id": "MUFG|20260515|20260527",
       "symbol": "MUFG",
       "company_name": "MITSUBISHI UFJ FINL-SPON ADR",
       "sec_type": "STK",
@@ -893,12 +734,12 @@
       "qty": 33.7837,
       "entry_price": 18.9786,
       "exit_price": 18.982,
-      "pnl": -0.2642,
+      "pnl": -0.26,
       "pnl_pct": -0.0412,
-      "commission": 0.3769
+      "commission": 0
     },
     {
-      "id": "GEV|5230859999",
+      "id": "GEV|20260526|20260527",
       "symbol": "GEV",
       "company_name": "GE VERNOVA INC",
       "sec_type": "STK",
@@ -908,12 +749,12 @@
       "qty": 1.0,
       "entry_price": 1094.4435,
       "exit_price": 1029.02,
-      "pnl": -65.7953,
+      "pnl": -65.8,
       "pnl_pct": -6.0118,
-      "commission": 0.3719
+      "commission": 0
     },
     {
-      "id": "OPEN|5225819251",
+      "id": "OPEN|20260522|20260526",
       "symbol": "OPEN",
       "company_name": "OPENDOOR TECHNOLOGIES INC",
       "sec_type": "STK",
@@ -923,12 +764,12 @@
       "qty": 100.0,
       "entry_price": 4.657,
       "exit_price": 4.7407,
-      "pnl": 7.9682,
+      "pnl": 7.97,
       "pnl_pct": 1.711,
-      "commission": 0.3998
+      "commission": 0
     },
     {
-      "id": "CME|5225781729",
+      "id": "CME|20260515|20260526",
       "symbol": "CME",
       "company_name": "CME GROUP INC",
       "sec_type": "STK",
@@ -938,12 +779,12 @@
       "qty": 2.7144,
       "entry_price": 304.0692,
       "exit_price": 283.7764,
-      "pnl": -55.4501,
+      "pnl": -55.45,
       "pnl_pct": -6.7182,
-      "commission": 0.3672
+      "commission": 0
     },
     {
-      "id": "IRDM|5224338754",
+      "id": "IRDM|20260520|20260526",
       "symbol": "IRDM",
       "company_name": "IRIDIUM COMMUNICATIONS INC",
       "sec_type": "STK",
@@ -953,12 +794,12 @@
       "qty": 10.0,
       "entry_price": 45.2782,
       "exit_price": 49.24,
-      "pnl": 39.2536,
+      "pnl": 39.25,
       "pnl_pct": 8.6694,
-      "commission": 0.3644
+      "commission": 0
     },
     {
-      "id": "OPEN  260522P00005000|40148248895",
+      "id": "OPEN  260522P00005000|20260421|20260522",
       "symbol": "OPEN  260522P00005000",
       "company_name": "OPEN 22MAY26 5 P",
       "sec_type": "OPT",
@@ -967,13 +808,13 @@
       "days": 31,
       "qty": 3.0,
       "entry_price": 34.298,
-      "exit_price": 0.0,
+      "exit_price": 34.298,
       "pnl": 0.0,
       "pnl_pct": 0.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "KMI|5218648345",
+      "id": "KMI|20260514|20260522",
       "symbol": "KMI",
       "company_name": "KINDER MORGAN INC",
       "sec_type": "STK",
@@ -983,12 +824,12 @@
       "qty": 40.9836,
       "entry_price": 33.3439,
       "exit_price": 33.3798,
-      "pnl": 1.0762,
+      "pnl": 1.08,
       "pnl_pct": 0.0788,
-      "commission": 0.3947
+      "commission": 0
     },
     {
-      "id": "SATS  260618P00110000|5217551330",
+      "id": "SATS  260618P00110000|20260520|20260521",
       "symbol": "SATS  260618P00110000",
       "company_name": "SATS 18JUN26 110 P",
       "sec_type": "OPT",
@@ -997,28 +838,28 @@
       "days": 1,
       "qty": 1.0,
       "entry_price": 158.9427,
-      "exit_price": -302.0,
-      "pnl": -144.1056,
+      "exit_price": 14.8371,
+      "pnl": -144.11,
       "pnl_pct": -90.6651,
-      "commission": 1.0482
+      "commission": 0
     },
     {
-      "id": "ARM|5217015576",
+      "id": "ARM|20260422|20260521",
       "symbol": "ARM",
       "company_name": "ARM HOLDINGS PLC-ADR",
       "sec_type": "STK",
-      "entry_date": "2026-05-14T13:04:34Z",
+      "entry_date": "2026-04-22T14:56:13Z",
       "exit_date": "2026-05-21T14:21:20Z",
-      "days": 7,
+      "days": 28,
       "qty": 1.0,
       "entry_price": 195.3005,
       "exit_price": 288.445,
-      "pnl": 92.7879,
+      "pnl": 92.79,
       "pnl_pct": 47.5104,
-      "commission": 0.3566
+      "commission": 0
     },
     {
-      "id": "XOM|5215556742",
+      "id": "XOM|20260515|20260521",
       "symbol": "XOM",
       "company_name": "EXXON MOBIL CORP",
       "sec_type": "STK",
@@ -1028,12 +869,12 @@
       "qty": 9.7276,
       "entry_price": 156.0962,
       "exit_price": 156.1031,
-      "pnl": -0.3181,
+      "pnl": -0.32,
       "pnl_pct": -0.0209,
-      "commission": 0.3854
+      "commission": 0
     },
     {
-      "id": "MTNM6|910000700",
+      "id": "MTNM6|20260515|20260520",
       "symbol": "MTNM6",
       "company_name": "MTN JUN26",
       "sec_type": "FUT",
@@ -1042,13 +883,13 @@
       "days": 5,
       "qty": 1.0,
       "entry_price": 11140.055,
-      "exit_price": -11140.625,
+      "exit_price": 11138.915,
       "pnl": -1.14,
       "pnl_pct": -0.0102,
-      "commission": 0.57
+      "commission": 0
     },
     {
-      "id": "CAVA|5208022114",
+      "id": "CAVA|20260514|20260519",
       "symbol": "CAVA",
       "company_name": "CAVA GROUP INC",
       "sec_type": "STK",
@@ -1058,12 +899,12 @@
       "qty": 13.6986,
       "entry_price": 75.2308,
       "exit_price": 77.2854,
-      "pnl": 27.7682,
+      "pnl": 27.77,
       "pnl_pct": 2.6945,
-      "commission": 0.3775
+      "commission": 0
     },
     {
-      "id": "NUE|5204148315",
+      "id": "NUE|20260505|20260519",
       "symbol": "NUE",
       "company_name": "NUCOR CORP",
       "sec_type": "STK",
@@ -1073,12 +914,12 @@
       "qty": 6.2266,
       "entry_price": 230.6666,
       "exit_price": 221.6162,
-      "pnl": -56.7348,
+      "pnl": -56.73,
       "pnl_pct": -3.9502,
-      "commission": 0.3812
+      "commission": 0
     },
     {
-      "id": "NVDA|5200156855",
+      "id": "NVDA|20260512|20260518",
       "symbol": "NVDA",
       "company_name": "NVIDIA CORP",
       "sec_type": "STK",
@@ -1088,12 +929,12 @@
       "qty": 9.9887,
       "entry_price": 221.1753,
       "exit_price": 221.4,
-      "pnl": 1.845,
+      "pnl": 1.84,
       "pnl_pct": 0.0835,
-      "commission": 0.3998
+      "commission": 0
     },
     {
-      "id": "TT|5199503844",
+      "id": "TT|20260514|20260518",
       "symbol": "TT",
       "company_name": "TRANE TECHNOLOGIES PLC",
       "sec_type": "STK",
@@ -1103,27 +944,27 @@
       "qty": 2.6638,
       "entry_price": 481.8014,
       "exit_price": 461.1502,
-      "pnl": -55.3874,
+      "pnl": -55.39,
       "pnl_pct": -4.3156,
-      "commission": 0.3766
+      "commission": 0
     },
     {
-      "id": "BE|5198673834",
+      "id": "BE|20260514|20260518",
       "symbol": "BE",
       "company_name": "BLOOM ENERGY CORP- A",
       "sec_type": "STK",
       "entry_date": "2026-05-14T13:03:13Z",
       "exit_date": "2026-05-18T09:38:24Z",
       "days": 3,
-      "qty": 1.5215999999999998,
+      "qty": 1.5216,
       "entry_price": 304.7312,
       "exit_price": 268.0631,
-      "pnl": -56.1534,
+      "pnl": -56.15,
       "pnl_pct": -12.1104,
-      "commission": 0.3593
+      "commission": 0
     },
     {
-      "id": "AXTI  260515P00040000|39992899460",
+      "id": "AXTI  260515P00040000|20260421|20260515",
       "symbol": "AXTI  260515P00040000",
       "company_name": "AXTI 15MAY26 40 P",
       "sec_type": "OPT",
@@ -1132,13 +973,13 @@
       "days": 24,
       "qty": 1.0,
       "entry_price": 160.9454,
-      "exit_price": 0.0,
-      "pnl": 160.9454,
+      "exit_price": 321.8908,
+      "pnl": 160.95,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "NBIS  260515P00105000|39991926679",
+      "id": "NBIS  260515P00105000|20260501|20260515",
       "symbol": "NBIS  260515P00105000",
       "company_name": "NBIS 15MAY26 105 P",
       "sec_type": "OPT",
@@ -1147,13 +988,13 @@
       "days": 14,
       "qty": 1.0,
       "entry_price": 76.9469,
-      "exit_price": 0.0,
-      "pnl": 76.9469,
+      "exit_price": 153.8937,
+      "pnl": 76.95,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "RKLB  260515P00050000|39992886602",
+      "id": "RKLB  260515P00050000|20260401|20260515",
       "symbol": "RKLB  260515P00050000",
       "company_name": "RKLB 15MAY26 50 P",
       "sec_type": "OPT",
@@ -1162,13 +1003,13 @@
       "days": 44,
       "qty": 1.0,
       "entry_price": 170.9463,
-      "exit_price": 0.0,
-      "pnl": 170.9463,
+      "exit_price": 341.8925,
+      "pnl": 170.95,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "PR|5155341254",
+      "id": "PR|20260504|20260506",
       "symbol": "PR",
       "company_name": "PERMIAN RESOURCES CORP-CL A",
       "sec_type": "STK",
@@ -1178,12 +1019,12 @@
       "qty": 50.0,
       "entry_price": 22.4852,
       "exit_price": 21.195,
-      "pnl": -64.9024,
+      "pnl": -64.9,
       "pnl_pct": -5.7729,
-      "commission": 0.392
+      "commission": 0
     },
     {
-      "id": "SNDK|5141993938",
+      "id": "SNDK|20260501|20260504",
       "symbol": "SNDK",
       "company_name": "SANDISK CORP",
       "sec_type": "STK",
@@ -1193,12 +1034,12 @@
       "qty": 1.0,
       "entry_price": 1129.9605,
       "exit_price": 1239.159,
-      "pnl": 108.8224,
+      "pnl": 108.82,
       "pnl_pct": 9.6306,
-      "commission": 0.3762
+      "commission": 0
     },
     {
-      "id": "LITE|5141719118",
+      "id": "LITE|20260430|20260504",
       "symbol": "LITE",
       "company_name": "LUMENTUM HOLDINGS INC",
       "sec_type": "STK",
@@ -1208,12 +1049,12 @@
       "qty": 1.0,
       "entry_price": 902.6515,
       "exit_price": 964.37,
-      "pnl": 61.348,
+      "pnl": 61.35,
       "pnl_pct": 6.7964,
-      "commission": 0.3705
+      "commission": 0
     },
     {
-      "id": "SKM|5140953880",
+      "id": "SKM|20260409|20260504",
       "symbol": "SKM",
       "company_name": "SK TELECOM CO LTD-SPON ADR",
       "sec_type": "STK",
@@ -1223,12 +1064,12 @@
       "qty": 10.0,
       "entry_price": 35.7332,
       "exit_price": 37.25,
-      "pnl": 14.8058,
+      "pnl": 14.81,
       "pnl_pct": 4.1434,
-      "commission": 0.3619
+      "commission": 0
     },
     {
-      "id": "FDX|5140373003",
+      "id": "FDX|20260430|20260504",
       "symbol": "FDX",
       "company_name": "FEDEX CORPORATION",
       "sec_type": "STK",
@@ -1238,12 +1079,12 @@
       "qty": 5.0,
       "entry_price": 402.2903,
       "exit_price": 378.5,
-      "pnl": -119.3475,
+      "pnl": -119.35,
       "pnl_pct": -5.9334,
-      "commission": 0.3962
+      "commission": 0
     },
     {
-      "id": "NVDA|5132337379",
+      "id": "NVDA|20251223|20260430",
       "symbol": "NVDA",
       "company_name": "NVIDIA CORP",
       "sec_type": "STK",
@@ -1253,12 +1094,12 @@
       "qty": 1.0,
       "entry_price": 188.0983,
       "exit_price": 201.4,
-      "pnl": 12.9469,
+      "pnl": 12.95,
       "pnl_pct": 6.883,
-      "commission": 0.3548
+      "commission": 0
     },
     {
-      "id": "HOOD|5127515701",
+      "id": "HOOD|20260414|20260429",
       "symbol": "HOOD",
       "company_name": "ROBINHOOD MARKETS INC - A",
       "sec_type": "STK",
@@ -1268,12 +1109,12 @@
       "qty": 5.0,
       "entry_price": 77.9352,
       "exit_price": 70.6007,
-      "pnl": -37.0321,
+      "pnl": -37.03,
       "pnl_pct": -9.5033,
-      "commission": 0.3595
+      "commission": 0
     },
     {
-      "id": "NBIS  260424P00105000|39488515903",
+      "id": "NBIS  260424P00105000|20260409|20260424",
       "symbol": "NBIS  260424P00105000",
       "company_name": "NBIS 24APR26 105 P",
       "sec_type": "OPT",
@@ -1282,13 +1123,13 @@
       "days": 15,
       "qty": 1.0,
       "entry_price": 127.9436,
-      "exit_price": 0.0,
-      "pnl": 127.9436,
+      "exit_price": 255.8872,
+      "pnl": 127.94,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "RKLB|5115616471",
+      "id": "RKLB|20260416|20260424",
       "symbol": "RKLB",
       "company_name": "ROCKET LAB CORP",
       "sec_type": "STK",
@@ -1298,12 +1139,12 @@
       "qty": 5.0,
       "entry_price": 80.2603,
       "exit_price": 80.22,
-      "pnl": -0.5618,
+      "pnl": -0.56,
       "pnl_pct": -0.14,
-      "commission": 0.3605
+      "commission": 0
     },
     {
-      "id": "CRWV|5113462775",
+      "id": "CRWV|20260422|20260424",
       "symbol": "CRWV",
       "company_name": "COREWEAVE INC-CL A",
       "sec_type": "STK",
@@ -1313,12 +1154,12 @@
       "qty": 5.0,
       "entry_price": 124.6303,
       "exit_price": 112.931,
-      "pnl": -58.8603,
+      "pnl": -58.86,
       "pnl_pct": -9.4456,
-      "commission": 0.3639
+      "commission": 0
     },
     {
-      "id": "QQQ|5103557119",
+      "id": "QQQ|20260421|20260422",
       "symbol": "QQQ",
       "company_name": "INVESCO QQQ TRUST SERIES 1",
       "sec_type": "STK",
@@ -1327,13 +1168,13 @@
       "days": 0,
       "qty": 4.0,
       "entry_price": 643.6738,
-      "exit_price": -652.0387,
-      "pnl": -33.8107,
+      "exit_price": 635.2211,
+      "pnl": -33.81,
       "pnl_pct": -1.3132,
-      "commission": 0.3511
+      "commission": 0
     },
     {
-      "id": "TSEM|5099794681",
+      "id": "TSEM|20260414|20260421",
       "symbol": "TSEM",
       "company_name": "TOWER SEMICONDUCTOR LTD",
       "sec_type": "STK",
@@ -1343,12 +1184,12 @@
       "qty": 2.0,
       "entry_price": 212.3853,
       "exit_price": 212.0645,
-      "pnl": -1.0014,
+      "pnl": -1.0,
       "pnl_pct": -0.2358,
-      "commission": 0.3598
+      "commission": 0
     },
     {
-      "id": "SQM|5090422353",
+      "id": "SQM|20260413|20260417",
       "symbol": "SQM",
       "company_name": "QUIMICA Y MINERA CHIL-SP ADR",
       "sec_type": "STK",
@@ -1358,12 +1199,12 @@
       "qty": 10.0,
       "entry_price": 88.3652,
       "exit_price": 88.21,
-      "pnl": -1.9246,
+      "pnl": -1.92,
       "pnl_pct": -0.2178,
-      "commission": 0.3724
+      "commission": 0
     },
     {
-      "id": "HOOD|5088124423",
+      "id": "HOOD|20260414|20260417",
       "symbol": "HOOD",
       "company_name": "ROBINHOOD MARKETS INC - A",
       "sec_type": "STK",
@@ -1373,12 +1214,12 @@
       "qty": 5.0,
       "entry_price": 77.9352,
       "exit_price": 91.2,
-      "pnl": 65.9622,
+      "pnl": 65.96,
       "pnl_pct": 16.9275,
-      "commission": 0.3616
+      "commission": 0
     },
     {
-      "id": "ENLT|5085453795",
+      "id": "ENLT|20260415|20260416",
       "symbol": "ENLT",
       "company_name": "ENLIGHT RENEWABLE ENERGY LTD",
       "sec_type": "STK",
@@ -1388,12 +1229,12 @@
       "qty": 10.0,
       "entry_price": 82.6552,
       "exit_price": 79.11,
-      "pnl": -35.8228,
+      "pnl": -35.82,
       "pnl_pct": -4.334,
-      "commission": 0.3705
+      "commission": 0
     },
     {
-      "id": "PLTR|5084171402",
+      "id": "PLTR|20260413|20260416",
       "symbol": "PLTR",
       "company_name": "PALANTIR TECHNOLOGIES INC-A",
       "sec_type": "STK",
@@ -1403,12 +1244,12 @@
       "qty": 2.0,
       "entry_price": 133.3653,
       "exit_price": 140.44,
-      "pnl": 13.7909,
+      "pnl": 13.79,
       "pnl_pct": 5.1704,
-      "commission": 0.3584
+      "commission": 0
     },
     {
-      "id": "PWR|5083748764",
+      "id": "PWR|20260413|20260416",
       "symbol": "PWR",
       "company_name": "QUANTA SERVICES INC",
       "sec_type": "STK",
@@ -1418,12 +1259,12 @@
       "qty": 3.0,
       "entry_price": 596.397,
       "exit_price": 580.61,
-      "pnl": -47.7482,
+      "pnl": -47.75,
       "pnl_pct": -2.6687,
-      "commission": 0.3873
+      "commission": 0
     },
     {
-      "id": "CME|5074784017",
+      "id": "CME|20260220|20260414",
       "symbol": "CME",
       "company_name": "CME GROUP INC",
       "sec_type": "STK",
@@ -1433,12 +1274,12 @@
       "qty": 2.0,
       "entry_price": 307.6528,
       "exit_price": 297.13,
-      "pnl": -21.4088,
+      "pnl": -21.41,
       "pnl_pct": -3.4794,
-      "commission": 0.3633
+      "commission": 0
     },
     {
-      "id": "AMZN  260320P00170000|38758155325",
+      "id": "AMZN  260320P00170000|20260219|20260320",
       "symbol": "AMZN  260320P00170000",
       "company_name": "AMZN 20MAR26 170 P",
       "sec_type": "OPT",
@@ -1447,13 +1288,13 @@
       "days": 29,
       "qty": 1.0,
       "entry_price": 66.428,
-      "exit_price": 0.0,
-      "pnl": 66.428,
+      "exit_price": 132.8559,
+      "pnl": 66.43,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "GOOGL 260320P00260000|38758400465",
+      "id": "GOOGL 260320P00260000|20260220|20260320",
       "symbol": "GOOGL 260320P00260000",
       "company_name": "GOOGL 20MAR26 260 P",
       "sec_type": "OPT",
@@ -1462,13 +1303,13 @@
       "days": 28,
       "qty": 1.0,
       "entry_price": 71.9455,
-      "exit_price": 0.0,
-      "pnl": 71.9455,
+      "exit_price": 143.8909,
+      "pnl": 71.95,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "INTC  260320P00035000|38758125478",
+      "id": "INTC  260320P00035000|20260126|20260320",
       "symbol": "INTC  260320P00035000",
       "company_name": "INTC 20MAR26 35 P",
       "sec_type": "OPT",
@@ -1477,13 +1318,13 @@
       "days": 53,
       "qty": 1.0,
       "entry_price": 67.948,
-      "exit_price": 0.0,
-      "pnl": 67.948,
+      "exit_price": 135.8959,
+      "pnl": 67.95,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "INTC  260320P00038000|38758412875",
+      "id": "INTC  260320P00038000|20260224|20260320",
       "symbol": "INTC  260320P00038000",
       "company_name": "INTC 20MAR26 38 P",
       "sec_type": "OPT",
@@ -1492,13 +1333,13 @@
       "days": 24,
       "qty": 1.0,
       "entry_price": 46.948,
-      "exit_price": 0.0,
-      "pnl": 46.948,
+      "exit_price": 93.8959,
+      "pnl": 46.95,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "NVDA  260320P00140000|38758095869",
+      "id": "NVDA  260320P00140000|20260303|20260320",
       "symbol": "NVDA  260320P00140000",
       "company_name": "NVDA 20MAR26 140 P",
       "sec_type": "OPT",
@@ -1507,13 +1348,13 @@
       "days": 17,
       "qty": 1.0,
       "entry_price": 54.5188,
-      "exit_price": 0.0,
-      "pnl": 54.5188,
+      "exit_price": 109.0375,
+      "pnl": 54.52,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "RDDT  260320P00090000|38757466569",
+      "id": "RDDT  260320P00090000|20260212|20260320",
       "symbol": "RDDT  260320P00090000",
       "company_name": "RDDT 20MAR26 90 P",
       "sec_type": "OPT",
@@ -1522,13 +1363,13 @@
       "days": 36,
       "qty": 1.0,
       "entry_price": 66.9455,
-      "exit_price": 0.0,
-      "pnl": 66.9455,
+      "exit_price": 133.8909,
+      "pnl": 66.95,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "SLB   260320P00045000|38757522297",
+      "id": "SLB   260320P00045000|20260204|20260320",
       "symbol": "SLB   260320P00045000",
       "company_name": "SLB 20MAR26 45 P",
       "sec_type": "OPT",
@@ -1537,13 +1378,13 @@
       "days": 44,
       "qty": 1.0,
       "entry_price": 55.948,
-      "exit_price": 0.0,
-      "pnl": 55.948,
+      "exit_price": 111.8959,
+      "pnl": 55.95,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "TXN   260320P00190000|4999531298",
+      "id": "TXN   260320P00190000|20260210|20260320",
       "symbol": "TXN   260320P00190000",
       "company_name": "TXN 20MAR26 190 P",
       "sec_type": "OPT",
@@ -1552,13 +1393,13 @@
       "days": 37,
       "qty": 1.0,
       "entry_price": 122.008,
-      "exit_price": -233.0,
+      "exit_price": 9.968,
       "pnl": -112.04,
       "pnl_pct": -91.8301,
-      "commission": 1.0479
+      "commission": 0
     },
     {
-      "id": "OHI|4996930889",
+      "id": "OHI|20260223|20260319",
       "symbol": "OHI",
       "company_name": "OMEGA HEALTHCARE INVESTORS",
       "sec_type": "STK",
@@ -1568,12 +1409,12 @@
       "qty": 10.0,
       "entry_price": 47.2445,
       "exit_price": 47.08,
-      "pnl": -2.029,
+      "pnl": -2.03,
       "pnl_pct": -0.4295,
-      "commission": 0.3837
+      "commission": 0
     },
     {
-      "id": "VZ|4996906698",
+      "id": "VZ|20260210|20260319",
       "symbol": "VZ",
       "company_name": "VERIZON COMMUNICATIONS INC",
       "sec_type": "STK",
@@ -1583,12 +1424,12 @@
       "qty": 10.0,
       "entry_price": 47.6802,
       "exit_price": 49.1019,
-      "pnl": 13.8623,
+      "pnl": 13.86,
       "pnl_pct": 2.9074,
-      "commission": 0.3542
+      "commission": 0
     },
     {
-      "id": "PL|4984890493",
+      "id": "PL|20260218|20260316",
       "symbol": "PL",
       "company_name": "PLANET LABS PBC",
       "sec_type": "STK",
@@ -1598,12 +1439,12 @@
       "qty": 10.0,
       "entry_price": 24.3832,
       "exit_price": 24.1009,
-      "pnl": -3.1775,
+      "pnl": -3.18,
       "pnl_pct": -1.3031,
-      "commission": 0.3542
+      "commission": 0
     },
     {
-      "id": "ORCL  260320P00100000|4967534941",
+      "id": "ORCL  260320P00100000|20260217|20260310",
       "symbol": "ORCL  260320P00100000",
       "company_name": "ORCL 20MAR26 100 P",
       "sec_type": "OPT",
@@ -1612,13 +1453,13 @@
       "days": 20,
       "qty": 1.0,
       "entry_price": 70.948,
-      "exit_price": -12.0,
+      "exit_price": 128.848,
       "pnl": 57.9,
       "pnl_pct": 81.6091,
-      "commission": 1.0479
+      "commission": 0
     },
     {
-      "id": "AMAT|4952568906",
+      "id": "AMAT|20260217|20260305",
       "symbol": "AMAT",
       "company_name": "APPLIED MATERIALS INC",
       "sec_type": "STK",
@@ -1628,12 +1469,12 @@
       "qty": 1.0,
       "entry_price": 358.9805,
       "exit_price": 344.955,
-      "pnl": -14.3761,
+      "pnl": -14.38,
       "pnl_pct": -4.0047,
-      "commission": 0.3507
+      "commission": 0
     },
     {
-      "id": "EEM|4940810607",
+      "id": "EEM|20260209|20260303",
       "symbol": "EEM",
       "company_name": "ISHARES MSCI EMERGING MARKET",
       "sec_type": "STK",
@@ -1643,12 +1484,12 @@
       "qty": 5.0,
       "entry_price": 60.6396,
       "exit_price": 57.505,
-      "pnl": -16.025,
+      "pnl": -16.02,
       "pnl_pct": -5.2853,
-      "commission": 0.3522
+      "commission": 0
     },
     {
-      "id": "ASX|4940309511",
+      "id": "ASX|20260224|20260303",
       "symbol": "ASX",
       "company_name": "ASE TECHNOLOGY HOLDING -ADR",
       "sec_type": "STK",
@@ -1658,12 +1499,12 @@
       "qty": 10.0,
       "entry_price": 24.9902,
       "exit_price": 22.76,
-      "pnl": -22.6565,
+      "pnl": -22.66,
       "pnl_pct": -9.0661,
-      "commission": 0.3542
+      "commission": 0
     },
     {
-      "id": "YPF|4927022888",
+      "id": "YPF|20260219|20260226",
       "symbol": "YPF",
       "company_name": "YPF S.A.-SPONSORED ADR",
       "sec_type": "STK",
@@ -1673,12 +1514,12 @@
       "qty": 5.0,
       "entry_price": 38.8103,
       "exit_price": 36.4517,
-      "pnl": -12.145,
+      "pnl": -12.14,
       "pnl_pct": -6.2587,
-      "commission": 0.3522
+      "commission": 0
     },
     {
-      "id": "FTAI|4903865259",
+      "id": "FTAI|20260218|20260219",
       "symbol": "FTAI",
       "company_name": "FTAI AVIATION LTD",
       "sec_type": "STK",
@@ -1688,12 +1529,12 @@
       "qty": 1.0,
       "entry_price": 296.5505,
       "exit_price": 284.86,
-      "pnl": -12.0411,
+      "pnl": -12.04,
       "pnl_pct": -4.0604,
-      "commission": 0.3507
+      "commission": 0
     },
     {
-      "id": "SKM|4902172440",
+      "id": "SKM|20260217|20260218",
       "symbol": "SKM",
       "company_name": "SK TELECOM CO LTD-SPON ADR",
       "sec_type": "STK",
@@ -1703,12 +1544,12 @@
       "qty": 15.0,
       "entry_price": 33.5136,
       "exit_price": 32.382,
-      "pnl": -17.3294,
+      "pnl": -17.33,
       "pnl_pct": -3.4473,
-      "commission": 0.3562
+      "commission": 0
     },
     {
-      "id": "HOOD  260320P00050000|4874409143",
+      "id": "HOOD  260320P00050000|20260205|20260209",
       "symbol": "HOOD  260320P00050000",
       "company_name": "HOOD 20MAR26 50 P",
       "sec_type": "OPT",
@@ -1717,13 +1558,13 @@
       "days": 4,
       "qty": 1.0,
       "entry_price": 83.458,
-      "exit_price": -25.0,
-      "pnl": 57.4067,
+      "exit_price": 140.8647,
+      "pnl": 57.41,
       "pnl_pct": 68.7852,
-      "commission": 1.0513
+      "commission": 0
     },
     {
-      "id": "MCHP|4865296172",
+      "id": "MCHP|20260204|20260206",
       "symbol": "MCHP",
       "company_name": "MICROCHIP TECHNOLOGY INC",
       "sec_type": "STK",
@@ -1733,12 +1574,12 @@
       "qty": 5.0,
       "entry_price": 79.2703,
       "exit_price": 74.575,
-      "pnl": -23.8285,
+      "pnl": -23.83,
       "pnl_pct": -6.012,
-      "commission": 0.3522
+      "commission": 0
     },
     {
-      "id": "BE|4828836918",
+      "id": "BE|20260128|20260129",
       "symbol": "BE",
       "company_name": "BLOOM ENERGY CORP- A",
       "sec_type": "STK",
@@ -1748,12 +1589,12 @@
       "qty": 2.0,
       "entry_price": 162.6241,
       "exit_price": 152.694,
-      "pnl": -20.2113,
+      "pnl": -20.21,
       "pnl_pct": -6.2141,
-      "commission": 0.351
+      "commission": 0
     },
     {
-      "id": "BMNR|4820059307",
+      "id": "BMNR|20250806|20260127",
       "symbol": "BMNR",
       "company_name": "BITMINE IMMERSION TECHNOLOGI",
       "sec_type": "STK",
@@ -1763,12 +1604,12 @@
       "qty": 1.0,
       "entry_price": 38.9484,
       "exit_price": 29.331,
-      "pnl": -9.9113,
+      "pnl": -9.91,
       "pnl_pct": -25.4472,
-      "commission": 0.2939
+      "commission": 0
     },
     {
-      "id": "COMP|4819174617",
+      "id": "COMP|20260126|20260127",
       "symbol": "COMP",
       "company_name": "COMPASS INC - CLASS A",
       "sec_type": "STK",
@@ -1778,12 +1619,12 @@
       "qty": 20.0,
       "entry_price": 13.7927,
       "exit_price": 12.8004,
-      "pnl": -20.2044,
+      "pnl": -20.2,
       "pnl_pct": -7.3243,
-      "commission": 0.3582
+      "commission": 0
     },
     {
-      "id": "BA|4814804565",
+      "id": "BA|20251208|20260126",
       "symbol": "BA",
       "company_name": "BOEING CO/THE",
       "sec_type": "STK",
@@ -1793,12 +1634,12 @@
       "qty": 1.0,
       "entry_price": 206.6533,
       "exit_price": 250.539,
-      "pnl": 43.535,
+      "pnl": 43.54,
       "pnl_pct": 21.0667,
-      "commission": 0.3507
+      "commission": 0
     },
     {
-      "id": "RKLB|4802554060",
+      "id": "RKLB|20260106|20260122",
       "symbol": "RKLB",
       "company_name": "ROCKET LAB CORP",
       "sec_type": "STK",
@@ -1808,12 +1649,12 @@
       "qty": 3.0,
       "entry_price": 81.637,
       "exit_price": 81.98,
-      "pnl": 0.6753,
+      "pnl": 0.68,
       "pnl_pct": 0.2757,
-      "commission": 0.3538
+      "commission": 0
     },
     {
-      "id": "BA|4773132485",
+      "id": "BA|20251208|20260113",
       "symbol": "BA",
       "company_name": "BOEING CO/THE",
       "sec_type": "STK",
@@ -1823,12 +1664,12 @@
       "qty": 1.0,
       "entry_price": 206.6533,
       "exit_price": 244.06,
-      "pnl": 37.056,
+      "pnl": 37.06,
       "pnl_pct": 17.9315,
-      "commission": 0.3507
+      "commission": 0
     },
     {
-      "id": "NVDA|4756474122",
+      "id": "NVDA|20251223|20260108",
       "symbol": "NVDA",
       "company_name": "NVIDIA CORP",
       "sec_type": "STK",
@@ -1838,12 +1679,12 @@
       "qty": 1.0,
       "entry_price": 188.4493,
       "exit_price": 186.0,
-      "pnl": -2.7986,
+      "pnl": -2.8,
       "pnl_pct": -1.4851,
-      "commission": 0.3494
+      "commission": 0
     },
     {
-      "id": "PDD|4755792926",
+      "id": "PDD|20260106|20260108",
       "symbol": "PDD",
       "company_name": "PDD HOLDINGS INC",
       "sec_type": "STK",
@@ -1853,12 +1694,12 @@
       "qty": 2.0,
       "entry_price": 125.0444,
       "exit_price": 118.971,
-      "pnl": -12.4979,
+      "pnl": -12.5,
       "pnl_pct": -4.9974,
-      "commission": 0.351
+      "commission": 0
     },
     {
-      "id": "TPR|4738135706",
+      "id": "TPR|20251218|20260102",
       "symbol": "TPR",
       "company_name": "TAPESTRY INC",
       "sec_type": "STK",
@@ -1868,12 +1709,12 @@
       "qty": 3.0,
       "entry_price": 126.1858,
       "exit_price": 127.48,
-      "pnl": 3.5313,
+      "pnl": 3.53,
       "pnl_pct": 0.9328,
-      "commission": 0.3514
+      "commission": 0
     },
     {
-      "id": "ANF|4737986153",
+      "id": "ANF|20251218|20260102",
       "symbol": "ANF",
       "company_name": "ABERCROMBIE & FITCH CO-CL A",
       "sec_type": "STK",
@@ -1883,12 +1724,12 @@
       "qty": 2.0,
       "entry_price": 120.9053,
       "exit_price": 123.42,
-      "pnl": 4.6783,
+      "pnl": 4.68,
       "pnl_pct": 1.9347,
-      "commission": 0.351
+      "commission": 0
     },
     {
-      "id": "USB|4731916122",
+      "id": "USB|20251218|20251230",
       "symbol": "USB",
       "company_name": "US BANCORP",
       "sec_type": "STK",
@@ -1898,12 +1739,12 @@
       "qty": 5.0,
       "entry_price": 54.3653,
       "exit_price": 54.195,
-      "pnl": -1.2033,
+      "pnl": -1.2,
       "pnl_pct": -0.4427,
-      "commission": 0.3521
+      "commission": 0
     },
     {
-      "id": "AS|4729375147",
+      "id": "AS|20251119|20251229",
       "symbol": "AS",
       "company_name": "AMER SPORTS INC",
       "sec_type": "STK",
@@ -1913,12 +1754,12 @@
       "qty": 5.0,
       "entry_price": 35.25,
       "exit_price": 37.941,
-      "pnl": 13.1028,
+      "pnl": 13.1,
       "pnl_pct": 7.4342,
-      "commission": 0.3521
+      "commission": 0
     },
     {
-      "id": "UAL|4728463432",
+      "id": "UAL|20251202|20251229",
       "symbol": "UAL",
       "company_name": "UNITED AIRLINES HOLDINGS INC",
       "sec_type": "STK",
@@ -1928,12 +1769,12 @@
       "qty": 3.0,
       "entry_price": 104.3233,
       "exit_price": 111.34,
-      "pnl": 20.6986,
+      "pnl": 20.7,
       "pnl_pct": 6.6136,
-      "commission": 0.3514
+      "commission": 0
     },
     {
-      "id": "ARGT  251219P00076000|36918540764",
+      "id": "ARGT  251219P00076000|20251031|20251219",
       "symbol": "ARGT  251219P00076000",
       "company_name": "ARGT 19DEC25 76 P",
       "sec_type": "OPT",
@@ -1942,13 +1783,13 @@
       "days": 49,
       "qty": 1.0,
       "entry_price": 75.9488,
-      "exit_price": 0.0,
-      "pnl": 75.9488,
+      "exit_price": 151.8976,
+      "pnl": 75.95,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "BAC   251219P00047000|36918984517",
+      "id": "BAC   251219P00047000|20251031|20251219",
       "symbol": "BAC   251219P00047000",
       "company_name": "BAC 19DEC25 47 P",
       "sec_type": "OPT",
@@ -1957,13 +1798,13 @@
       "days": 49,
       "qty": 1.0,
       "entry_price": 41.9488,
-      "exit_price": 0.0,
-      "pnl": 41.9488,
+      "exit_price": 83.8976,
+      "pnl": 41.95,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "HAL   251219P00024000|36918304877",
+      "id": "HAL   251219P00024000|20251110|20251219",
       "symbol": "HAL   251219P00024000",
       "company_name": "HAL 19DEC25 24 P",
       "sec_type": "OPT",
@@ -1972,13 +1813,13 @@
       "days": 39,
       "qty": 3.0,
       "entry_price": 17.3613,
-      "exit_price": 0.0,
-      "pnl": 52.0839,
+      "exit_price": 34.7226,
+      "pnl": 52.08,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "INTC  251219P00025000|36919335209",
+      "id": "INTC  251219P00025000|20250926|20251219",
       "symbol": "INTC  251219P00025000",
       "company_name": "INTC 19DEC25 25 P",
       "sec_type": "OPT",
@@ -1987,13 +1828,13 @@
       "days": 84,
       "qty": 1.0,
       "entry_price": 48.9466,
-      "exit_price": 0.0,
-      "pnl": 48.9466,
+      "exit_price": 97.8931,
+      "pnl": 48.95,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "ONON  251219P00042500|36918226776",
+      "id": "ONON  251219P00042500|20251202|20251219",
       "symbol": "ONON  251219P00042500",
       "company_name": "ONON 19DEC25 42.5 P",
       "sec_type": "OPT",
@@ -2002,13 +1843,13 @@
       "days": 17,
       "qty": 1.0,
       "entry_price": 58.9831,
-      "exit_price": 0.0,
-      "pnl": 58.9831,
+      "exit_price": 117.9662,
+      "pnl": 58.98,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "MU|4709913099",
+      "id": "MU|20251218|20251219",
       "symbol": "MU",
       "company_name": "MICRON TECHNOLOGY INC",
       "sec_type": "STK",
@@ -2017,13 +1858,13 @@
       "days": 0,
       "qty": 1.0,
       "entry_price": 252.1764,
-      "exit_price": -264.13,
-      "pnl": -12.3041,
+      "exit_price": 239.8723,
+      "pnl": -12.3,
       "pnl_pct": -4.8792,
-      "commission": 0.3505
+      "commission": 0
     },
     {
-      "id": "LVS|4656435204",
+      "id": "LVS|20251125|20251202",
       "symbol": "LVS",
       "company_name": "LAS VEGAS SANDS CORP",
       "sec_type": "STK",
@@ -2033,12 +1874,12 @@
       "qty": 5.0,
       "entry_price": 67.755,
       "exit_price": 68.882,
-      "pnl": 4.6341,
+      "pnl": 4.63,
       "pnl_pct": 1.3679,
-      "commission": 1.0008
+      "commission": 0
     },
     {
-      "id": "TRV|4656357117",
+      "id": "TRV|20251121|20251202",
       "symbol": "TRV",
       "company_name": "TRAVELERS COS INC/THE",
       "sec_type": "STK",
@@ -2048,12 +1889,12 @@
       "qty": 2.0,
       "entry_price": 292.43,
       "exit_price": 289.67,
-      "pnl": -6.5204,
+      "pnl": -6.52,
       "pnl_pct": -1.1149,
-      "commission": 1.0003
+      "commission": 0
     },
     {
-      "id": "CRDO|4656217555",
+      "id": "CRDO|20251201|20251202",
       "symbol": "CRDO",
       "company_name": "CREDO TECHNOLOGY GROUP HOLDI",
       "sec_type": "STK",
@@ -2063,12 +1904,12 @@
       "qty": 1.0,
       "entry_price": 183.5,
       "exit_price": 192.82,
-      "pnl": 8.3198,
+      "pnl": 8.32,
       "pnl_pct": 4.534,
-      "commission": 1.0002
+      "commission": 0
     },
     {
-      "id": "CRDO|4655323125",
+      "id": "CRDO|20251201|20251201",
       "symbol": "CRDO",
       "company_name": "CREDO TECHNOLOGY GROUP HOLDI",
       "sec_type": "STK",
@@ -2078,12 +1919,12 @@
       "qty": 1.0,
       "entry_price": 183.5,
       "exit_price": 171.8844,
-      "pnl": -12.6158,
+      "pnl": -12.62,
       "pnl_pct": -6.8751,
-      "commission": 1.0002
+      "commission": 0
     },
     {
-      "id": "CVX   251128P00148000|36520190614",
+      "id": "CVX   251128P00148000|20251113|20251128",
       "symbol": "CVX   251128P00148000",
       "company_name": "CVX 28NOV25 148 P",
       "sec_type": "OPT",
@@ -2092,13 +1933,13 @@
       "days": 15,
       "qty": 1.0,
       "entry_price": 63.9513,
-      "exit_price": 0.0,
-      "pnl": 63.9513,
+      "exit_price": 127.9026,
+      "pnl": 63.95,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "SPY|4646861149",
+      "id": "SPY|20251031|20251126",
       "symbol": "SPY",
       "company_name": "SPDR S&P 500 ETF TRUST",
       "sec_type": "STK",
@@ -2107,13 +1948,13 @@
       "days": 26,
       "qty": 1.0,
       "entry_price": 681.4448,
-      "exit_price": -680.775,
-      "pnl": -0.3302,
+      "exit_price": 681.1146,
+      "pnl": -0.33,
       "pnl_pct": -0.0485,
-      "commission": 1.0
+      "commission": 0
     },
     {
-      "id": "AMZN  251219P00215000|4627543160",
+      "id": "AMZN  251219P00215000|20251105|20251120",
       "symbol": "AMZN  251219P00215000",
       "company_name": "AMZN 19DEC25 215 P",
       "sec_type": "OPT",
@@ -2122,13 +1963,13 @@
       "days": 14,
       "qty": 1.0,
       "entry_price": 135.0113,
-      "exit_price": -738.0,
-      "pnl": -604.0346,
+      "exit_price": -469.0233,
+      "pnl": -604.03,
       "pnl_pct": -447.3955,
-      "commission": 1.0459
+      "commission": 0
     },
     {
-      "id": "TSM   251219P00220000|4626433848",
+      "id": "TSM   251219P00220000|20251024|20251120",
       "symbol": "TSM   251219P00220000",
       "company_name": "TSM 19DEC25 220 P",
       "sec_type": "OPT",
@@ -2137,13 +1978,13 @@
       "days": 26,
       "qty": 1.0,
       "entry_price": 127.2013,
-      "exit_price": -61.0,
-      "pnl": 65.4354,
+      "exit_price": 192.6367,
+      "pnl": 65.44,
       "pnl_pct": 51.4424,
-      "commission": 0.7659
+      "commission": 0
     },
     {
-      "id": "RTX|4606405904",
+      "id": "RTX|20251110|20251114",
       "symbol": "RTX",
       "company_name": "RTX CORP",
       "sec_type": "STK",
@@ -2153,12 +1994,12 @@
       "qty": 1.0,
       "entry_price": 180.33,
       "exit_price": 173.335,
-      "pnl": -7.9952,
+      "pnl": -8.0,
       "pnl_pct": -4.4337,
-      "commission": 1.0002
+      "commission": 0
     },
     {
-      "id": "BBVA|4604759797",
+      "id": "BBVA|20251105|20251113",
       "symbol": "BBVA",
       "company_name": "BANCO BILBAO VIZCAYA-SP ADR",
       "sec_type": "STK",
@@ -2168,12 +2009,12 @@
       "qty": 15.0,
       "entry_price": 20.4817,
       "exit_price": 21.6207,
-      "pnl": 16.0824,
+      "pnl": 16.08,
       "pnl_pct": 5.2347,
-      "commission": 1.0028
+      "commission": 0
     },
     {
-      "id": "BIDU|4602160736",
+      "id": "BIDU|20251110|20251113",
       "symbol": "BIDU",
       "company_name": "BAIDU INC - SPON ADR",
       "sec_type": "STK",
@@ -2183,12 +2024,12 @@
       "qty": 2.0,
       "entry_price": 132.804,
       "exit_price": 124.714,
-      "pnl": -17.1804,
+      "pnl": -17.18,
       "pnl_pct": -6.4683,
-      "commission": 1.0004
+      "commission": 0
     },
     {
-      "id": "FLR   251121P00040000|4584777439",
+      "id": "FLR   251121P00040000|20251013|20251107",
       "symbol": "FLR   251121P00040000",
       "company_name": "FLR 21NOV25 40 P",
       "sec_type": "OPT",
@@ -2197,13 +2038,13 @@
       "days": 24,
       "qty": 1.0,
       "entry_price": 124.1013,
-      "exit_price": -75.0,
-      "pnl": 49.1054,
+      "exit_price": 173.2067,
+      "pnl": 49.11,
       "pnl_pct": 39.5688,
-      "commission": 0.0041
+      "commission": 0
     },
     {
-      "id": "CBRE|4577239791",
+      "id": "CBRE|20251105|20251106",
       "symbol": "CBRE",
       "company_name": "CBRE GROUP INC - A",
       "sec_type": "STK",
@@ -2212,13 +2053,13 @@
       "days": 0,
       "qty": 5.0,
       "entry_price": 147.3798,
-      "exit_price": -151.6,
-      "pnl": -22.1011,
+      "exit_price": 142.9596,
+      "pnl": -22.1,
       "pnl_pct": -2.9992,
-      "commission": 1.0001
+      "commission": 0
     },
     {
-      "id": "LYFT  251219P00018000|4573418028",
+      "id": "LYFT  251219P00018000|20250930|20251105",
       "symbol": "LYFT  251219P00018000",
       "company_name": "LYFT 19DEC25 18 P",
       "sec_type": "OPT",
@@ -2227,13 +2068,13 @@
       "days": 35,
       "qty": 1.0,
       "entry_price": 92.9466,
-      "exit_price": -107.0,
-      "pnl": -15.0993,
+      "exit_price": 77.8472,
+      "pnl": -15.1,
       "pnl_pct": -16.2452,
-      "commission": 1.0459
+      "commission": 0
     },
     {
-      "id": "SMCI  251107P00046000|4571031303",
+      "id": "SMCI  251107P00046000|20251009|20251104",
       "symbol": "SMCI  251107P00046000",
       "company_name": "SMCI 07NOV25 46 P",
       "sec_type": "OPT",
@@ -2242,13 +2083,13 @@
       "days": 26,
       "qty": 1.0,
       "entry_price": 115.9513,
-      "exit_price": -170.0,
-      "pnl": -55.0946,
+      "exit_price": 60.8567,
+      "pnl": -55.09,
       "pnl_pct": -47.5153,
-      "commission": 1.0459
+      "commission": 0
     },
     {
-      "id": "SYM|4567252682",
+      "id": "SYM|20251031|20251104",
       "symbol": "SYM",
       "company_name": "SYMBOTIC INC",
       "sec_type": "STK",
@@ -2258,12 +2099,12 @@
       "qty": 4.0,
       "entry_price": 81.05,
       "exit_price": 75.37,
-      "pnl": -23.7208,
+      "pnl": -23.72,
       "pnl_pct": -7.3167,
-      "commission": 1.0008
+      "commission": 0
     },
     {
-      "id": "NBIS|4562874722",
+      "id": "NBIS|20251031|20251103",
       "symbol": "NBIS",
       "company_name": "NEBIUS GROUP NV",
       "sec_type": "STK",
@@ -2273,12 +2114,12 @@
       "qty": 3.0,
       "entry_price": 131.4334,
       "exit_price": 126.02,
-      "pnl": -17.2406,
+      "pnl": -17.24,
       "pnl_pct": -4.3725,
-      "commission": 1.0006
+      "commission": 0
     },
     {
-      "id": "AMD   251031P00165000|35970690547",
+      "id": "AMD   251031P00165000|20251006|20251031",
       "symbol": "AMD   251031P00165000",
       "company_name": "AMD 31OCT25 165 P",
       "sec_type": "OPT",
@@ -2287,13 +2128,13 @@
       "days": 25,
       "qty": 1.0,
       "entry_price": 134.9513,
-      "exit_price": 0.0,
-      "pnl": 134.9513,
+      "exit_price": 269.9026,
+      "pnl": 134.95,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "META  251031C00790000|35971043907",
+      "id": "META  251031C00790000|20251029|20251031",
       "symbol": "META  251031C00790000",
       "company_name": "META 31OCT25 790 C",
       "sec_type": "OPT",
@@ -2303,12 +2144,12 @@
       "qty": 1.0,
       "entry_price": 1241.0484,
       "exit_price": 0.0,
-      "pnl": -1241.0484,
+      "pnl": -1241.05,
       "pnl_pct": -100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "META  251031C00795000|35971025510",
+      "id": "META  251031C00795000|20251029|20251031",
       "symbol": "META  251031C00795000",
       "company_name": "META 31OCT25 795 C",
       "sec_type": "OPT",
@@ -2317,13 +2158,13 @@
       "days": 2,
       "qty": 1.0,
       "entry_price": 1104.9488,
-      "exit_price": 0.0,
-      "pnl": 1104.9488,
+      "exit_price": 2209.8976,
+      "pnl": 1104.95,
       "pnl_pct": 100.0,
-      "commission": 0.0
+      "commission": 0
     },
     {
-      "id": "NTGR|4549279262",
+      "id": "NTGR|20251010|20251029",
       "symbol": "NTGR",
       "company_name": "NETGEAR INC",
       "sec_type": "STK",
@@ -2333,12 +2174,12 @@
       "qty": 5.0,
       "entry_price": 35.875,
       "exit_price": 33.68,
-      "pnl": -11.9761,
+      "pnl": -11.98,
       "pnl_pct": -6.6765,
-      "commission": 1.0009
+      "commission": 0
     },
     {
-      "id": "STX|4540732941",
+      "id": "STX|20251024|20251027",
       "symbol": "STX",
       "company_name": "SEAGATE TECHNOLOGY HOLDINGS",
       "sec_type": "STK",
@@ -2348,12 +2189,12 @@
       "qty": 2.0,
       "entry_price": 239.58,
       "exit_price": 227.89,
-      "pnl": -24.3804,
+      "pnl": -24.38,
       "pnl_pct": -5.0882,
-      "commission": 1.0004
+      "commission": 0
     },
     {
-      "id": "NVTS|4538348490",
+      "id": "NVTS|20251024|20251027",
       "symbol": "NVTS",
       "company_name": "NAVITAS SEMICONDUCTOR CORP",
       "sec_type": "STK",
@@ -2363,12 +2204,12 @@
       "qty": 15.0,
       "entry_price": 14.7967,
       "exit_price": 13.7907,
-      "pnl": -16.0926,
+      "pnl": -16.09,
       "pnl_pct": -7.2506,
-      "commission": 1.0028
+      "commission": 0
     },
     {
-      "id": "SMCI|4537414724",
+      "id": "SMCI|20251024|20251027",
       "symbol": "SMCI",
       "company_name": "SUPER MICRO COMPUTER INC",
       "sec_type": "STK",
@@ -2377,28 +2218,28 @@
       "days": 2,
       "qty": 10.0,
       "entry_price": 48.5405,
-      "exit_price": -50.74,
-      "pnl": -22.9951,
+      "exit_price": 46.241,
+      "pnl": -23.0,
       "pnl_pct": -4.7373,
-      "commission": 1.0002
+      "commission": 0
     },
     {
-      "id": "SMCI|4537087696",
+      "id": "SMCI|20251023|20251027",
       "symbol": "SMCI",
       "company_name": "SUPER MICRO COMPUTER INC",
       "sec_type": "STK",
-      "entry_date": "2025-10-24T10:28:42Z",
+      "entry_date": "2025-10-23T10:45:14Z",
       "exit_date": "2025-10-27T09:30:03Z",
-      "days": 2,
+      "days": 3,
       "qty": 10.0,
       "entry_price": 48.5707,
-      "exit_price": -49.9575,
-      "pnl": -14.8681,
+      "exit_price": 47.0839,
+      "pnl": -14.87,
       "pnl_pct": -3.0611,
-      "commission": 1.0002
+      "commission": 0
     },
     {
-      "id": "META|4534015970",
+      "id": "META|20251006|20251024",
       "symbol": "META",
       "company_name": "META PLATFORMS INC-CLASS A",
       "sec_type": "STK",
@@ -2408,12 +2249,12 @@
       "qty": 1.0,
       "entry_price": 713.615,
       "exit_price": 733.8587,
-      "pnl": 19.2435,
+      "pnl": 19.24,
       "pnl_pct": 2.6966,
-      "commission": 1.0002
+      "commission": 0
     },
     {
-      "id": "GMAB|4513960663",
+      "id": "GMAB|20251013|20251020",
       "symbol": "GMAB",
       "company_name": "GENMAB A/S -SP ADR",
       "sec_type": "STK",
@@ -2423,12 +2264,12 @@
       "qty": 5.0,
       "entry_price": 32.859,
       "exit_price": 31.29,
-      "pnl": -8.846,
+      "pnl": -8.85,
       "pnl_pct": -5.3842,
-      "commission": 1.0009
+      "commission": 0
     },
     {
-      "id": "BTU|4512215421",
+      "id": "BTU|20251013|20251017",
       "symbol": "BTU",
       "company_name": "PEABODY ENERGY CORP",
       "sec_type": "STK",
@@ -2438,12 +2279,12 @@
       "qty": 5.0,
       "entry_price": 33.75,
       "exit_price": 31.495,
-      "pnl": -12.276,
+      "pnl": -12.28,
       "pnl_pct": -7.2747,
-      "commission": 1.0009
+      "commission": 0
     },
     {
-      "id": "ORCL|4507498960",
+      "id": "ORCL|20251009|20251016",
       "symbol": "ORCL",
       "company_name": "ORACLE CORP",
       "sec_type": "STK",
@@ -2453,12 +2294,12 @@
       "qty": 2.0,
       "entry_price": 298.65,
       "exit_price": 312.72,
-      "pnl": 27.1396,
+      "pnl": 27.14,
       "pnl_pct": 4.5437,
-      "commission": 1.0004
+      "commission": 0
     },
     {
-      "id": "BLD|4499623719",
+      "id": "BLD|20251008|20251015",
       "symbol": "BLD",
       "company_name": "TOPBUILD CORP",
       "sec_type": "STK",
@@ -2468,12 +2309,12 @@
       "qty": 1.0,
       "entry_price": 424.45,
       "exit_price": 438.9,
-      "pnl": 13.4498,
+      "pnl": 13.45,
       "pnl_pct": 3.1688,
-      "commission": 1.0002
+      "commission": 0
     },
     {
-      "id": "IMO|4499583097",
+      "id": "IMO|20251009|20251015",
       "symbol": "IMO",
       "company_name": "IMPERIAL OIL LTD",
       "sec_type": "STK",
@@ -2482,13 +2323,13 @@
       "days": 5,
       "qty": 4.0,
       "entry_price": 87.8798,
-      "exit_price": -87.874,
-      "pnl": -0.9768,
+      "exit_price": 87.6356,
+      "pnl": -0.98,
       "pnl_pct": -0.2779,
-      "commission": 1.0001
+      "commission": 0
     },
     {
-      "id": "NVDA|4485579226",
+      "id": "NVDA|20250930|20251010",
       "symbol": "NVDA",
       "company_name": "NVIDIA CORP",
       "sec_type": "STK",
@@ -2498,12 +2339,12 @@
       "qty": 1.0,
       "entry_price": 186.75,
       "exit_price": 183.845,
-      "pnl": -3.9052,
+      "pnl": -3.91,
       "pnl_pct": -2.0911,
-      "commission": 1.0002
+      "commission": 0
     },
     {
-      "id": "AMZN|4482176847",
+      "id": "AMZN|20251009|20251010",
       "symbol": "AMZN",
       "company_name": "AMAZON.COM INC",
       "sec_type": "STK",
@@ -2513,12 +2354,12 @@
       "qty": 1.0,
       "entry_price": 227.965,
       "exit_price": 220.81,
-      "pnl": -8.1552,
+      "pnl": -8.16,
       "pnl_pct": -3.5774,
-      "commission": 1.0002
+      "commission": 0
     },
     {
-      "id": "DIA|4481778602",
+      "id": "DIA|20250911|20251010",
       "symbol": "DIA",
       "company_name": "SPDR DJIA TRUST",
       "sec_type": "STK",
@@ -2528,12 +2369,12 @@
       "qty": 1.0,
       "entry_price": 462.03,
       "exit_price": 460.96,
-      "pnl": -2.0702,
+      "pnl": -2.07,
       "pnl_pct": -0.4481,
-      "commission": 1.0002
+      "commission": 0
     },
     {
-      "id": "DLX|4474863582",
+      "id": "DLX|20250822|20251009",
       "symbol": "DLX",
       "company_name": "DELUXE CORP",
       "sec_type": "STK",
@@ -2543,12 +2384,12 @@
       "qty": 5.0,
       "entry_price": 20.0233,
       "exit_price": 18.91,
-      "pnl": -6.5128,
+      "pnl": -6.51,
       "pnl_pct": -6.5053,
-      "commission": 0.9464
+      "commission": 0
     },
     {
-      "id": "FUTU|4431274757",
+      "id": "FUTU|20250925|20250926",
       "symbol": "FUTU",
       "company_name": "FUTU HOLDINGS LTD-ADR",
       "sec_type": "STK",
@@ -2558,12 +2399,12 @@
       "qty": 2.0,
       "entry_price": 179.58,
       "exit_price": 173.49,
-      "pnl": -13.1804,
+      "pnl": -13.18,
       "pnl_pct": -3.6698,
-      "commission": 1.0004
+      "commission": 0
     },
     {
-      "id": "GLW|4426552283",
+      "id": "GLW|20250825|20250925",
       "symbol": "GLW",
       "company_name": "CORNING INC",
       "sec_type": "STK",
@@ -2573,12 +2414,12 @@
       "qty": 2.0,
       "entry_price": 67.3291,
       "exit_price": 77.43,
-      "pnl": 19.2014,
+      "pnl": 19.2,
       "pnl_pct": 14.2593,
-      "commission": 1.0004
+      "commission": 0
     },
     {
-      "id": "MSI|4405220290",
+      "id": "MSI|20250902|20250918",
       "symbol": "MSI",
       "company_name": "MOTOROLA SOLUTIONS INC",
       "sec_type": "STK",
@@ -2588,12 +2429,12 @@
       "qty": 1.0,
       "entry_price": 476.24,
       "exit_price": 473.9,
-      "pnl": -3.3402,
+      "pnl": -3.34,
       "pnl_pct": -0.7014,
-      "commission": 1.0002
+      "commission": 0
     },
     {
-      "id": "GLW|4386345361",
+      "id": "GLW|20250825|20250912",
       "symbol": "GLW",
       "company_name": "CORNING INC",
       "sec_type": "STK",
@@ -2603,12 +2444,12 @@
       "qty": 1.0,
       "entry_price": 67.3291,
       "exit_price": 76.7207,
-      "pnl": 8.6242,
+      "pnl": 8.62,
       "pnl_pct": 12.809,
-      "commission": 0.7674
+      "commission": 0
     },
     {
-      "id": "VERX|4371216948",
+      "id": "VERX|20250903|20250908",
       "symbol": "VERX",
       "company_name": "VERTEX INC - CLASS A",
       "sec_type": "STK",
@@ -2617,13 +2458,13 @@
       "days": 5,
       "qty": 10.0,
       "entry_price": 24.3938,
-      "exit_price": -25.71,
-      "pnl": -14.1622,
+      "exit_price": 22.9776,
+      "pnl": -14.16,
       "pnl_pct": -5.8057,
-      "commission": 1.0003
+      "commission": 0
     },
     {
-      "id": "ZEPP|4371180505",
+      "id": "ZEPP|20250903|20250908",
       "symbol": "ZEPP",
       "company_name": "ZEPP HEALTH CORP-ADR",
       "sec_type": "STK",
@@ -2633,12 +2474,12 @@
       "qty": 3.0,
       "entry_price": 50.3394,
       "exit_price": 46.19,
-      "pnl": -13.4487,
+      "pnl": -13.45,
       "pnl_pct": -8.9053,
-      "commission": 1.0006
+      "commission": 0
     },
     {
-      "id": "DASH|4366169210",
+      "id": "DASH|20250903|20250905",
       "symbol": "DASH",
       "company_name": "DOORDASH INC - A",
       "sec_type": "STK",
@@ -2648,12 +2489,12 @@
       "qty": 1.0,
       "entry_price": 251.25,
       "exit_price": 244.05,
-      "pnl": -8.2002,
+      "pnl": -8.2,
       "pnl_pct": -3.2638,
-      "commission": 1.0002
+      "commission": 0
     },
     {
-      "id": "GLW|4363866569",
+      "id": "GLW|20250825|20250905",
       "symbol": "GLW",
       "company_name": "CORNING INC",
       "sec_type": "STK",
@@ -2663,12 +2504,12 @@
       "qty": 2.0,
       "entry_price": 67.3291,
       "exit_price": 70.775,
-      "pnl": 5.8914,
+      "pnl": 5.89,
       "pnl_pct": 4.375,
-      "commission": 1.0004
+      "commission": 0
     },
     {
-      "id": "LRCX|4362382025",
+      "id": "LRCX|20250903|20250904",
       "symbol": "LRCX",
       "company_name": "LAM RESEARCH CORP",
       "sec_type": "STK",
@@ -2677,13 +2518,13 @@
       "days": 1,
       "qty": 3.0,
       "entry_price": 96.4965,
-      "exit_price": -100.805,
-      "pnl": -13.9257,
+      "exit_price": 91.8546,
+      "pnl": -13.93,
       "pnl_pct": -4.8104,
-      "commission": 1.0001
+      "commission": 0
     },
     {
-      "id": "ADP|4361837192",
+      "id": "ADP|20250903|20250904",
       "symbol": "ADP",
       "company_name": "AUTOMATIC DATA PROCESSING",
       "sec_type": "STK",
@@ -2692,13 +2533,13 @@
       "days": 1,
       "qty": 2.0,
       "entry_price": 297.9098,
-      "exit_price": -301.39,
-      "pnl": -7.9604,
+      "exit_price": 293.9296,
+      "pnl": -7.96,
       "pnl_pct": -1.336,
-      "commission": 1.0001
+      "commission": 0
     },
     {
-      "id": "IBM|4361283717",
+      "id": "IBM|20250903|20250904",
       "symbol": "IBM",
       "company_name": "INTL BUSINESS MACHINES CORP",
       "sec_type": "STK",
@@ -2707,13 +2548,13 @@
       "days": 1,
       "qty": 2.0,
       "entry_price": 239.9012,
-      "exit_price": -247.5468,
-      "pnl": -16.2912,
+      "exit_price": 231.7556,
+      "pnl": -16.29,
       "pnl_pct": -3.3954,
-      "commission": 1.0001
+      "commission": 0
     },
     {
-      "id": "PEG|4360180181",
+      "id": "PEG|20250821|20250904",
       "symbol": "PEG",
       "company_name": "PUBLIC SERVICE ENTERPRISE GP",
       "sec_type": "STK",
@@ -2722,13 +2563,13 @@
       "days": 13,
       "qty": 3.0,
       "entry_price": 83.2665,
-      "exit_price": -82.25,
-      "pnl": 2.0494,
+      "exit_price": 83.9496,
+      "pnl": 2.05,
       "pnl_pct": 0.8204,
-      "commission": 1.0001
+      "commission": 0
     },
     {
-      "id": "FUTU|4359863523",
+      "id": "FUTU|20250822|20250904",
       "symbol": "FUTU",
       "company_name": "FUTU HOLDINGS LTD-ADR",
       "sec_type": "STK",
@@ -2738,12 +2579,12 @@
       "qty": 5.0,
       "entry_price": 188.235,
       "exit_price": 187.86,
-      "pnl": -2.8761,
+      "pnl": -2.88,
       "pnl_pct": -0.3056,
-      "commission": 1.001
+      "commission": 0
     },
     {
-      "id": "SPY|4353614598",
+      "id": "SPY|20250820|20250902",
       "symbol": "SPY",
       "company_name": "SPDR S&P 500 ETF TRUST",
       "sec_type": "STK",
@@ -2753,12 +2594,12 @@
       "qty": 1.0,
       "entry_price": 636.1093,
       "exit_price": 635.472,
-      "pnl": -1.6375,
+      "pnl": -1.64,
       "pnl_pct": -0.2574,
-      "commission": 1.0002
+      "commission": 0
     },
     {
-      "id": "MO|4352585751",
+      "id": "MO|20250826|20250902",
       "symbol": "MO",
       "company_name": "ALTRIA GROUP INC",
       "sec_type": "STK",
@@ -2767,13 +2608,13 @@
       "days": 7,
       "qty": 3.0,
       "entry_price": 66.1385,
-      "exit_price": -66.9393,
-      "pnl": -3.4026,
+      "exit_price": 65.0043,
+      "pnl": -3.4,
       "pnl_pct": -1.7149,
-      "commission": 1.0001
+      "commission": 0
     },
     {
-      "id": "FAST|4352564074",
+      "id": "FAST|20250819|20250902",
       "symbol": "FAST",
       "company_name": "FASTENAL CO",
       "sec_type": "STK",
@@ -2783,12 +2624,12 @@
       "qty": 3.0,
       "entry_price": 49.7934,
       "exit_price": 49.51,
-      "pnl": -1.8507,
+      "pnl": -1.85,
       "pnl_pct": -1.2389,
-      "commission": 1.0006
+      "commission": 0
     },
     {
-      "id": "FUTU|4333080794",
+      "id": "FUTU|20250822|20250825",
       "symbol": "FUTU",
       "company_name": "FUTU HOLDINGS LTD-ADR",
       "sec_type": "STK",
@@ -2798,12 +2639,12 @@
       "qty": 5.0,
       "entry_price": 188.235,
       "exit_price": 194.805,
-      "pnl": 31.8489,
+      "pnl": 31.85,
       "pnl_pct": 3.384,
-      "commission": 1.001
+      "commission": 0
     },
     {
-      "id": "MO|4329917505",
+      "id": "MO|20250818|20250822",
       "symbol": "MO",
       "company_name": "ALTRIA GROUP INC",
       "sec_type": "STK",
@@ -2813,87 +2654,27 @@
       "qty": 3.0,
       "entry_price": 66.8184,
       "exit_price": 67.6209,
-      "pnl": 1.407,
+      "pnl": 1.41,
       "pnl_pct": 0.7019,
-      "commission": 1.0006
+      "commission": 0
     },
     {
-      "id": "FUTU|4329455654",
+      "id": "FUTU|20250822|20250822",
       "symbol": "FUTU",
       "company_name": "FUTU HOLDINGS LTD-ADR",
       "sec_type": "STK",
       "entry_date": "2025-08-22T10:05:53Z",
       "exit_date": "2025-08-22T10:32:27Z",
       "days": 0,
-      "qty": 10.0,
+      "qty": 90.0,
       "entry_price": 188.235,
-      "exit_price": 191.47,
-      "pnl": 31.3479,
-      "pnl_pct": 1.6654,
-      "commission": 1.0019
+      "exit_price": 189.2022,
+      "pnl": 82.03,
+      "pnl_pct": 0.4842,
+      "commission": 0
     },
     {
-      "id": "FUTU|4329217268",
-      "symbol": "FUTU",
-      "company_name": "FUTU HOLDINGS LTD-ADR",
-      "sec_type": "STK",
-      "entry_date": "2025-08-22T10:05:53Z",
-      "exit_date": "2025-08-22T10:19:05Z",
-      "days": 0,
-      "qty": 10.0,
-      "entry_price": 188.235,
-      "exit_price": 190.535,
-      "pnl": 21.9978,
-      "pnl_pct": 1.1686,
-      "commission": 1.0019
-    },
-    {
-      "id": "FUTU|4329144153",
-      "symbol": "FUTU",
-      "company_name": "FUTU HOLDINGS LTD-ADR",
-      "sec_type": "STK",
-      "entry_date": "2025-08-22T10:05:53Z",
-      "exit_date": "2025-08-22T10:15:51Z",
-      "days": 0,
-      "qty": 10.0,
-      "entry_price": 188.235,
-      "exit_price": 189.79,
-      "pnl": 14.5478,
-      "pnl_pct": 0.7729,
-      "commission": 1.0019
-    },
-    {
-      "id": "FUTU|4329073445",
-      "symbol": "FUTU",
-      "company_name": "FUTU HOLDINGS LTD-ADR",
-      "sec_type": "STK",
-      "entry_date": "2025-08-22T10:05:53Z",
-      "exit_date": "2025-08-22T10:13:29Z",
-      "days": 0,
-      "qty": 10.0,
-      "entry_price": 188.235,
-      "exit_price": 188.775,
-      "pnl": 4.3978,
-      "pnl_pct": 0.2336,
-      "commission": 1.0019
-    },
-    {
-      "id": "FUTU|4329064100",
-      "symbol": "FUTU",
-      "company_name": "FUTU HOLDINGS LTD-ADR",
-      "sec_type": "STK",
-      "entry_date": "2025-08-22T10:05:53Z",
-      "exit_date": "2025-08-22T10:12:39Z",
-      "days": 0,
-      "qty": 50.0,
-      "entry_price": 188.235,
-      "exit_price": 188.45,
-      "pnl": 9.7393,
-      "pnl_pct": 0.1035,
-      "commission": 1.0094
-    },
-    {
-      "id": "BA|4328625870",
+      "id": "BA|20250805|20250822",
       "symbol": "BA",
       "company_name": "BOEING CO/THE",
       "sec_type": "STK",
@@ -2903,12 +2684,12 @@
       "qty": 2.0,
       "entry_price": 225.21,
       "exit_price": 229.02,
-      "pnl": 6.6196,
+      "pnl": 6.62,
       "pnl_pct": 1.4696,
-      "commission": 1.0004
+      "commission": 0
     },
     {
-      "id": "FSLR|4321510329",
+      "id": "FSLR|20250818|20250820",
       "symbol": "FSLR",
       "company_name": "FIRST SOLAR INC",
       "sec_type": "STK",
@@ -2918,12 +2699,12 @@
       "qty": 1.0,
       "entry_price": 218.855,
       "exit_price": 207.77,
-      "pnl": -12.0852,
+      "pnl": -12.09,
       "pnl_pct": -5.522,
-      "commission": 1.0002
+      "commission": 0
     },
     {
-      "id": "TPG|4314872550",
+      "id": "TPG|20250806|20250818",
       "symbol": "TPG",
       "company_name": "TPG INC",
       "sec_type": "STK",
@@ -2933,12 +2714,12 @@
       "qty": 5.0,
       "entry_price": 60.23,
       "exit_price": 62.27,
-      "pnl": 9.1989,
+      "pnl": 9.2,
       "pnl_pct": 3.0546,
-      "commission": 1.001
+      "commission": 0
     },
     {
-      "id": "OTIS|4299406144",
+      "id": "OTIS|20250811|20250812",
       "symbol": "OTIS",
       "company_name": "OTIS WORLDWIDE CORP",
       "sec_type": "STK",
@@ -2947,13 +2728,13 @@
       "days": 0,
       "qty": 4.0,
       "entry_price": 85.9048,
-      "exit_price": -88.095,
-      "pnl": -9.7609,
+      "exit_price": 83.4646,
+      "pnl": -9.76,
       "pnl_pct": -2.8406,
-      "commission": 1.0001
+      "commission": 0
     },
     {
-      "id": "AXON|4297834631",
+      "id": "AXON|20250806|20250812",
       "symbol": "AXON",
       "company_name": "AXON ENTERPRISE INC",
       "sec_type": "STK",
@@ -2963,42 +2744,27 @@
       "qty": 0.5,
       "entry_price": 872.1,
       "exit_price": 772.55,
-      "pnl": -50.7751,
+      "pnl": -50.78,
       "pnl_pct": -11.6443,
-      "commission": 1.0001
+      "commission": 0
     },
     {
-      "id": "BMNR|4295867544",
+      "id": "BMNR|20250806|20250811",
       "symbol": "BMNR",
       "company_name": "BITMINE IMMERSION TECHNOLOGI",
       "sec_type": "STK",
       "entry_date": "2025-08-06T15:54:22Z",
       "exit_date": "2025-08-11T15:37:08Z",
       "days": 4,
-      "qty": 1.0,
+      "qty": 2.0,
       "entry_price": 38.9484,
-      "exit_price": 61.26,
-      "pnl": 21.6988,
-      "pnl_pct": 55.7118,
-      "commission": 0.6128
+      "exit_price": 62.295,
+      "pnl": 45.45,
+      "pnl_pct": 58.3426,
+      "commission": 0
     },
     {
-      "id": "BMNR|4293429735",
-      "symbol": "BMNR",
-      "company_name": "BITMINE IMMERSION TECHNOLOGI",
-      "sec_type": "STK",
-      "entry_date": "2025-08-06T15:54:22Z",
-      "exit_date": "2025-08-11T09:59:17Z",
-      "days": 4,
-      "qty": 1.0,
-      "entry_price": 38.9484,
-      "exit_price": 63.33,
-      "pnl": 23.7481,
-      "pnl_pct": 60.9734,
-      "commission": 0.6335
-    },
-    {
-      "id": "URBN|4246271479",
+      "id": "URBN|20250723|20250724",
       "symbol": "URBN",
       "company_name": "URBAN OUTFITTERS INC",
       "sec_type": "STK",
@@ -3008,25 +2774,171 @@
       "qty": 5.0,
       "entry_price": 78.035,
       "exit_price": 73.44,
-      "pnl": -23.9761,
+      "pnl": -23.98,
       "pnl_pct": -6.145,
-      "commission": 1.001
+      "commission": 0
     },
     {
-      "id": "PANW|4193305526",
+      "id": "PANW|20250512|20250707",
       "symbol": "PANW",
       "company_name": "PALO ALTO NETWORKS INC",
       "sec_type": "STK",
-      "entry_date": "",
+      "entry_date": "2025-05-12T15:24:36Z",
       "exit_date": "2025-07-07T09:36:06Z",
-      "days": 0,
+      "days": 55,
       "qty": 1.0,
       "entry_price": 193.51,
       "exit_price": 200.34,
-      "pnl": 5.8298,
+      "pnl": 5.83,
       "pnl_pct": 3.0126,
-      "commission": 1.0002
+      "commission": 0
     }
   ],
-  "trades": []
+  "positions": [
+    {
+      "symbol": "AAPL",
+      "company_name": "APPLE INC",
+      "asset_class": "STK",
+      "position": 3.0,
+      "average_price": 290.53196667,
+      "market_price": 296.95,
+      "market_value": 890.85,
+      "unrealized_pnl": 19.25,
+      "daily_pnl": -3.18,
+      "entry_date": "2026-06-10T11:51:44Z",
+      "days_held": 12
+    },
+    {
+      "symbol": "BE",
+      "company_name": "BLOOM ENERGY CORP-A",
+      "asset_class": "STK",
+      "position": 1.0,
+      "average_price": 274.6753,
+      "market_price": 345.29,
+      "market_value": 345.29,
+      "unrealized_pnl": 70.61,
+      "daily_pnl": 16.38,
+      "entry_date": "2026-06-15T12:46:33Z",
+      "days_held": 7
+    },
+    {
+      "symbol": "DELL",
+      "company_name": "DELL TECHNOLOGIES",
+      "asset_class": "STK",
+      "position": 1.0,
+      "average_price": 412.7305,
+      "market_price": 417.93,
+      "market_value": 417.93,
+      "unrealized_pnl": 5.2,
+      "daily_pnl": 8.43,
+      "entry_date": "2026-06-15T11:38:00Z",
+      "days_held": 7
+    },
+    {
+      "symbol": "HOOD PUT",
+      "company_name": "HOOD Aug21 60 PUT",
+      "asset_class": "OPT",
+      "position": -1.0,
+      "average_price": 1.999443,
+      "market_price": 0.515,
+      "market_value": -51.5,
+      "unrealized_pnl": 148.45,
+      "daily_pnl": 2.0,
+      "entry_date": "2026-04-14T09:52:14Z",
+      "days_held": 69
+    },
+    {
+      "symbol": "NOK PUT 10",
+      "company_name": "NOK Dec18 10 PUT",
+      "asset_class": "OPT",
+      "position": -2.0,
+      "average_price": 0.9229655,
+      "market_price": 0.8798,
+      "market_value": -175.96,
+      "unrealized_pnl": 8.63,
+      "daily_pnl": 29.86,
+      "entry_date": "",
+      "days_held": 0
+    },
+    {
+      "symbol": "NOK PUT 12",
+      "company_name": "NOK Dec18 12 PUT",
+      "asset_class": "OPT",
+      "position": -1.0,
+      "average_price": 1.372256,
+      "market_price": 1.6919,
+      "market_value": -169.19,
+      "unrealized_pnl": -31.96,
+      "daily_pnl": 23.45,
+      "entry_date": "",
+      "days_held": 0
+    },
+    {
+      "symbol": "PENG",
+      "company_name": "PENGUIN SOLUTIONS INC",
+      "asset_class": "STK",
+      "position": 3.0,
+      "average_price": 67.05696667,
+      "market_price": 68.01,
+      "market_value": 204.03,
+      "unrealized_pnl": 2.86,
+      "daily_pnl": 2.58,
+      "entry_date": "2026-06-18T15:27:15Z",
+      "days_held": 4
+    },
+    {
+      "symbol": "PLTR",
+      "company_name": "PALANTIR TECHNOLOGIES",
+      "asset_class": "STK",
+      "position": 2.0,
+      "average_price": 134.38035,
+      "market_price": 119.385,
+      "market_value": 238.77,
+      "unrealized_pnl": -29.99,
+      "daily_pnl": -18.17,
+      "entry_date": "2026-06-15T11:40:47Z",
+      "days_held": 7
+    },
+    {
+      "symbol": "PWR",
+      "company_name": "QUANTA SERVICES INC",
+      "asset_class": "STK",
+      "position": 1.0,
+      "average_price": 721.4205,
+      "market_price": 741.975,
+      "market_value": 741.97,
+      "unrealized_pnl": 20.55,
+      "daily_pnl": 20.55,
+      "entry_date": "2026-06-15T15:16:22Z",
+      "days_held": 7
+    },
+    {
+      "symbol": "STRL",
+      "company_name": "STERLING INFRASTRUCTURE",
+      "asset_class": "STK",
+      "position": 1.0,
+      "average_price": 913.5105,
+      "market_price": 933.225,
+      "market_value": 933.22,
+      "unrealized_pnl": 19.71,
+      "daily_pnl": 19.71,
+      "entry_date": "2026-05-28T10:58:24Z",
+      "days_held": 25
+    },
+    {
+      "symbol": "URI",
+      "company_name": "UNITED RENTALS INC",
+      "asset_class": "STK",
+      "position": 1.0,
+      "average_price": 1031.1705,
+      "market_price": 1092.453,
+      "market_value": 1092.45,
+      "unrealized_pnl": 61.28,
+      "daily_pnl": 15.64,
+      "entry_date": "2026-06-03T12:07:31Z",
+      "days_held": 19
+    }
+  ],
+  "trades": [],
+  "spy_note": "SPY fetched client-side by browser"
 }
